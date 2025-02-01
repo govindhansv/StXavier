@@ -25,7 +25,7 @@ const Navbar = () => {
           <div className="flex items-center space-x-4">
             <div className="w-12 h-12 relative">
               <Image
-                src="/api/placeholder/48/48"
+                src="/assets/home/logo.png"
                 alt="St. Xavier's Logo"
                 className="object-contain"
                 width={48}

@@ -43,8 +43,8 @@ const HeroSection = () => {
 
           {/* Right Image */}
           <div className="relative h-[500px]">
-            <Image
-              src="/api/placeholder/600/500"
+            <img
+              src="/assets/home/welcome.png"
               alt="Student on skateboard"
               className="object-contain"
               fill
@@ -52,25 +52,7 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Statistics Section */}
-        <div className="mt-16 bg-gray-50 rounded-lg p-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <div
-                key={index}
-                className="text-center border-r last:border-r-0 border-gray-200"
-              >
-                <div className="text-4xl font-bold text-blue-600 mb-2">
-                  {stat.value}
-                </div>
-                <div className="text-gray-600 flex items-center justify-center gap-2">
-                  {stat.icon && <span>{stat.icon}</span>}
-                  {stat.label}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        
       </div>
     </div>
   );
