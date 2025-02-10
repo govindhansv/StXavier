@@ -6,7 +6,7 @@ const VisionMissionSection = () => {
       <div className="grid md:grid-cols-2 gap-12">
         {/* Vision Section */}
         <div className="space-y-6">
-          <div className="inline-block bg-pink-500 text-white px-6 py-2 text-lg font-bold mb-6">
+          <div className="inline-block bg-[#FF0076] text-white px-6 py-2 text-lg font-bold mb-6">
             Vision
           </div>
 
@@ -28,7 +28,7 @@ const VisionMissionSection = () => {
 
         {/* Mission Section */}
         <div className="space-y-6">
-          <div className="inline-block bg-pink-500 text-white px-6 py-2 text-lg font-bold mb-6">
+          <div className="inline-block bg-[#FF0076] text-white px-6 py-2 text-lg font-bold mb-6">
             Mission
           </div>
 

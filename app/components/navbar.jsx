@@ -59,7 +59,7 @@ const Navbar = () => {
                 </Link>
               ))}
             </div>
-            <button className="bg-pink-600 text-white px-6 py-2 rounded text-sm font-medium hover:bg-pink-700">
+            <button className="bg-[#FF0076] text-white px-6 py-2 rounded text-sm font-medium hover:bg-[#FF0076]">
               Admission
             </button>
           </div>
@@ -102,7 +102,7 @@ const Navbar = () => {
               </Link>
             ))}
             <div className="px-4 py-3">
-              <button className="w-full bg-pink-600 text-white px-6 py-2 rounded text-sm font-medium hover:bg-pink-700">
+              <button className="w-full bg-[#FF0076] text-white px-6 py-2 rounded text-sm font-medium hover:bg-[#FF0076]">
                 Admission
               </button>
             </div>

@@ -5,7 +5,7 @@ const Eumind = () => {
     <div className="lg:px-40 mx-auto p-8">
       {/* Header */}
       <div className="mb-8">
-        <span className="inline-block bg-pink-500 text-white px-6 py-2 text-lg font-bold">
+        <span className="inline-block bg-[#FF0076] text-white px-6 py-2 text-lg font-bold">
           EUMIND - Student Exchange Programme
         </span>
       </div>

@@ -69,13 +69,13 @@ const ExtraCurricularActivities = () => {
       <div className=" mx-auto">
         {/* Header */}
         <div className="mb-8">
-          <span className="inline-block bg-pink-500 text-white px-6 py-2 text-lg font-bold">
+          <span className="inline-block bg-[#FF0076] text-white px-6 py-2 text-lg font-bold">
             EXTRA CURRICULAR ACTIVITIES
           </span>
         </div>
             {/* Header */}
             <div className="absolute top-0">
-          <button className="bg-pink-500 text-white px-8 py-2 text-lg font-bold">
+          <button className="bg-[#FF0076] text-white px-8 py-2 text-lg font-bold">
             Director's Message
           </button>
         </div>

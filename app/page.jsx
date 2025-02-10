@@ -37,12 +37,12 @@ export default function Home() {
         <EumindDetails />
         <TeachersSection />
         <UpcomingEvents />
-        <ContactFooter />
         <ExtraCurricularActivities />
         <NewsAndEvents />
         <PreviousEvents />
         <ImageGallery />
         <Testimonials />
+        <ContactFooter />
 
         {/* 
         <DirectorsMessage />

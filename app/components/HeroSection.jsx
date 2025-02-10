@@ -13,7 +13,7 @@ const HeroSection = () => {
     <div className="lg:px-40 relative bg-white">
       {/* Pink About Us Button */}
       <div className="absolute top-0">
-        <button className="bg-pink-500 text-white px-8 py-2 text-lg font-bold">
+        <button className="bg-[#FF0076] text-white px-8 py-2 text-lg font-bold">
           About Us
         </button>
       </div>
