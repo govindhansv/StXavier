@@ -1,33 +1,35 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
 const HeroSection = () => {
   const stats = [
-    { value: '12K+', label: 'Students' },
-    { value: '150+', label: 'Faculty' },
-    { value: '4', label: 'Programs', icon: '💡' },
-    { value: '5', label: 'Sports', icon: '🏃' },
+    { value: "12K+", label: "Students" },
+    { value: "150+", label: "Faculty" },
+    { value: "4", label: "Programs", icon: "💡" },
+    { value: "5", label: "Sports", icon: "🏃" },
   ];
 
   return (
-    <div className="relative bg-white">
+    <div className="lg:px-40 relative bg-white">
       {/* Pink About Us Button */}
-      <div className="absolute top-10 pl-40">
-        <button className="bg-pink-500 text-white px-8 py-2 rounded-md text-lg font-medium">
+      <div className="absolute top-0">
+        <button className="bg-pink-500 text-white px-8 py-2 text-lg font-bold">
           About Us
         </button>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
+      <div className="mx-auto md:pt-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>
-            <h1 className="text-6xl font-bold text-blue-600 mb-6">
+            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[102px] font-bold text-blue-600 mb-6">
               WELCOME
             </h1>
+
             <h2 className="text-3xl font-bold text-gray-800 mb-6 leading-tight">
               TO ST. XAVIER'S HIGH SCHOOL &<br />
-              JUNIOR COLLEGE, PANCHGANI<br />
+              JUNIOR COLLEGE, PANCHGANI
+              <br />
               (RESIDENTIAL)
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed">
@@ -35,8 +37,8 @@ const HeroSection = () => {
               institution of St. Xavier's Education Trust. Panchgani, an
               evergreen hill station is a well-known education centre. Located
               4300 feet above sea level in the Western Ghats, it is 300 kms
-              south of Bombay and 100 kms south of Pune. St. Xaviers provides
-              a unique environment to impart value-based education with
+              south of Bombay and 100 kms south of Pune. St. Xaviers provides a
+              unique environment to impart value-based education with
               opportunities for moral upbringing
             </p>
           </div>
@@ -47,12 +49,9 @@ const HeroSection = () => {
               src="/assets/home/welcome.png"
               alt="Student on skateboard"
               className="object-contain"
-              fill
             />
           </div>
         </div>
-
-        
       </div>
     </div>
   );

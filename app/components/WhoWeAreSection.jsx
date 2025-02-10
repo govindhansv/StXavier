@@ -2,7 +2,7 @@ import React from 'react';
 
 const WhoWeAreSection = () => {
   return (
-    <div className="max-w-6xl mx-auto p-8">
+    <div className="lg:px-40 mx-auto p-8">
       <div className="mb-8">
         <span className="inline-block bg-pink-500 text-white px-6 py-2 text-lg font-bold">
           WHO WE ARE
