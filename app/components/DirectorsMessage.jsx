@@ -31,7 +31,7 @@ const DirectorsMessage = () => {
             </h2>
 
             {/* Quote mark */}
-            <div className="absolute right-0 -top-21">
+            <div className="absolute right-0 -top-20">
               <span className="text-pink-500 text-[200px] font-serif">"</span>
             </div>
 
