@@ -2,7 +2,7 @@ import React from "react";
 
 const Eumind = () => {
   return (
-    <div className="lg:px-40 mx-auto p-8">
+    <div className="lg:px-40 mx-auto px-6 pt-6 md:pt-0">
       {/* Header */}
       <div className="mb-8">
         <span className="inline-block bg-[#FF0076] text-white px-6 py-2 text-lg font-bold">
@@ -24,7 +24,7 @@ const Eumind = () => {
             className="w-16 h-16 bg-white bg-opacity-80 rounded-full flex items-center justify-center hover:bg-opacity-100 transition-opacity"
             aria-label="Play video"
           >
-            <div className="w-0 h-0 border-t-8 border-t-transparent border-l-12 border-l-pink-500 border-b-8 border-b-transparent ml-1"></div>
+            <div className="w-0 h-0 border-t-8 border-t-transparent border-l-12 border-l-pink-[#FF0076] border-b-8 border-b-transparent ml-1"></div>
           </button>
         </div>
       </div>

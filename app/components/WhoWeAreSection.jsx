@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const WhoWeAreSection = () => {
   return (
@@ -8,14 +8,16 @@ const WhoWeAreSection = () => {
           WHO WE ARE
         </span>
       </div>
-      
-      <div className="text-gray-800 text-lg leading-relaxed">
+
+      <div className="text-gray-800 text-lg lg:text-[22px]  leading-snug font-light ">
         <p>
-          St. Xavier's High School is affiliated to ICSE and Maharashtra State Board. St. Xavier's Junior 
-          College is Maharashtra State Board and It has become the gateway to high quality 
-          professional education and success. St. Xavier's Junior College offers cutting edge training 
-          with balanced preparation for various entrance examinations. The campus facilities and best 
-          guidance of qualified professionals provide a unique environment for competitive learning.
+          St. Xavier's High School is affiliated to ICSE and Maharashtra State
+          Board. St. Xavier's Junior College is Maharashtra State Board and It
+          has become the gateway to high quality professional education and
+          success. St. Xavier's Junior College offers cutting edge training with
+          balanced preparation for various entrance examinations. The campus
+          facilities and best guidance of qualified professionals provide a
+          unique environment for competitive learning.
         </p>
       </div>
     </div>

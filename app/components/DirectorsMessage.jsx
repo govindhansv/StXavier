@@ -3,39 +3,39 @@ import React from "react";
 const DirectorsMessage = () => {
   return (
     <div
-      className="relative lg:px-40  py-12"
+      className="relative px-4 lg:px-40 py-12"
       style={{ background: "#F0F0F0 0% 0% no-repeat padding-box" }}
     >
       <div className="mx-auto">
         {/* Header */}
-        <div className="absolute top-0">
+        <div className="absolute top-0 left-8 lg:left-40">
           <button className="bg-[#FF0076] text-white px-8 py-2 text-lg font-bold">
             Director's Message
           </button>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-8 items-start relative mt-12">
+        <div className="flex flex-col lg:flex-row gap-8 items-center lg:items-start relative mt-12">
           {/* Image */}
-          <div className="w-full md:w-1/4 h-12">
+          <div className="w-full lg:w-1/4 flex justify-center lg:justify-start">
             <img
               src="/assets/home/director.png"
               alt="Fr. Tomy Kariyilakulam"
-              className=" h-64 object-contain"
+              className="h-48 lg:h-64 object-contain"
             />
           </div>
 
           {/* Message Content */}
-          <div className="w-full md:w-2/3 relative">
-            <h2 className="text-2xl font-bold mb-4 text-gray-800">
+          <div className="w-full lg:w-2/3 relative">
+            <h2 className="text-xl lg:text-2xl font-bold mb-4 text-gray-800 text-center lg:text-left">
               Fr. Tomy Kariyilakulam
             </h2>
 
             {/* Quote mark */}
-            <div className="absolute right-0 -top-20">
-              <span className="text-pink-500 text-[200px] font-serif">"</span>
+            <div className="hidden lg:block absolute right-0 -top-20">
+              <span className="text-pink-[#FF0076] text-[200px] font-serif">"</span>
             </div>
 
-            <p className="text-gray-700 text-[24px] leading-relaxed pt-4">
+            <p className="text-gray-700 text-base  lg:text-[22px]  leading-snug font-light  font-light pt-4 text-center lg:text-left ">
               When I founded St. Xavier's in Panchgani, which is known as the
               education hub of Maharashtra, I had a dream. That was to create
               transformative excellence in character and quality. I do think

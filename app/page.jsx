@@ -33,33 +33,17 @@ export default function Home() {
         <DirectorsMessage />
         <FacilitiesSection />
         <FacilitiesGrid />
+        <ExtraCurricularActivities />
         <Eumind />
         <EumindDetails />
         <TeachersSection />
-        <UpcomingEvents />
-        <ExtraCurricularActivities />
         <NewsAndEvents />
+        <UpcomingEvents />
         <PreviousEvents />
         <ImageGallery />
         <Testimonials />
         <ContactFooter />
-
-        {/* 
-        <DirectorsMessage />
-        <FacilitiesSection/>
-        <FacilitiesGrid/>
-        <ExtraCurricularActivities/>
-        <Eumind/>
-        <EumindDetails/>
-        <TeachersSection/>
-        <NewsAndEvents/>
-        <UpcomingEvents/>
-        <PreviousEvents/>
-        <ImageGallery/>
-        <Testimonials/>
-        <ContactFooter/> */}
       </div>
-      {/* <HeroStats/> */}
     </>
   );
 }

@@ -9,7 +9,7 @@ const WhyUsSection = () => {
         </span>
       </div>
 
-      <div className="text-gray-800 text-lg leading-relaxed">
+      <div className="text-gray-800 text-lg  lg:text-[22px]  leading-snug font-light ">
         <p>
           St. Xavier's provides holistic education with qualified, multilingual
           staff, balanced meals, and a nurturing environment at Alphonsa Hostel.

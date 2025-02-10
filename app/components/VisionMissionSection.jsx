@@ -10,7 +10,7 @@ const VisionMissionSection = () => {
             Vision
           </div>
 
-          <p className="text-gray-700 text-lg leading-relaxed mb-8">
+          <p className="text-gray-700 text-lg  lg:text-[22px]  leading-snug font-light  mb-8">
             St. Xavier's envisions an integral and holistic development of the
             child, so as to enable him/her to live a free, just and honest life,
             empowering him/her to face the world with zest and contribute to the
@@ -34,52 +34,52 @@ const VisionMissionSection = () => {
 
           <div className="space-y-6">
             <div>
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-gray-700 text-lg  lg:text-[22px]  leading-snug font-light ">
                 Empower the students to be on constant pursuit of knowledge by
                 strengthening their intellectual capacities and seeking better
                 ways to assimilate knowledge.
               </p>
-              <div className="border-b border-pink-300 my-4"></div>
+              <div className="border-b border-2 w-32 border-[#FF0076] my-4"></div>
             </div>
 
             <div>
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-gray-700 text-lg  lg:text-[22px]  leading-snug font-light ">
                 Enable the students to understand the changes and explosions
                 taking place in the field of knowledge.
               </p>
-              <div className="border-b border-pink-300 my-4"></div>
+              <div className="border-b border-2 w-32 border-[#FF0076] my-4"></div>
             </div>
 
             <div>
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-gray-700 text-lg  lg:text-[22px]  leading-snug font-light ">
                 Develop a creative mind, which will search for a new way of
                 being and doing at every point of life.
               </p>
-              <div className="border-b border-pink-300 my-4"></div>
+              <div className="border-b border-2 w-32 border-[#FF0076] my-4"></div>
             </div>
 
             <div>
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-gray-700 text-lg  lg:text-[22px]  leading-snug font-light ">
                 Instill in their minds an aspiration for leadership towards
                 growth and change.
               </p>
-              <div className="border-b border-pink-300 my-4"></div>
+              <div className="border-b border-2 w-32 border-[#FF0076] my-4"></div>
             </div>
 
             <div>
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-gray-700 text-lg  lg:text-[22px]  leading-snug font-light ">
                 Develop a generation who will be ambassadors of peace, joy and
                 altruism.
               </p>
-              <div className="border-b border-pink-300 my-4"></div>
+              <div className="border-b border-2 w-32 border-[#FF0076] my-4"></div>
             </div>
 
             <div>
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-gray-700 text-lg  lg:text-[22px]  leading-snug font-light ">
                 Develop a balanced emotional character and personality, leading
                 to self-awareness, motivation, self control.
               </p>
-              <div className="border-b border-pink-300 my-4"></div>
+              <div className="border-b border-2 w-32 border-[#FF0076] my-4"></div>
             </div>
           </div>
         </div>
