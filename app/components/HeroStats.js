@@ -83,7 +83,7 @@ const HeroStats = () => {
                       {stat.icon}
                     </div>
                   )}
-                  <span className="text-pink-500 font-semibold">
+                  <span className="text-pink-[#FF0076] font-semibold">
                     {stat.label}
                   </span>
                 </div>
