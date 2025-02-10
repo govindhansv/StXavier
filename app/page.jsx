@@ -38,12 +38,11 @@ export default function Home() {
         <TeachersSection />
         <UpcomingEvents />
         <ContactFooter />
-        <ExtraCurricularActivities/>
-        <NewsAndEvents/>
-        <PreviousEvents/>
-        <ImageGallery/>
-        <Testimonials/>
-
+        <ExtraCurricularActivities />
+        <NewsAndEvents />
+        <PreviousEvents />
+        <ImageGallery />
+        <Testimonials />
 
         {/* 
         <DirectorsMessage />
