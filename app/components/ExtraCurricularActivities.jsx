@@ -16,17 +16,68 @@ const ExtraCurricularActivities = () => {
       title: "Archery",
       image: "/assets/home/library.png",
       alt: "Student practicing archery"
+    },
+    {
+      title: "Sports & Games",
+      image: "/assets/home/library.png",
+      alt: "Students playing badminton"
+    },
+    {
+      title: "Athletics",
+      image: "/assets/home/library.png",
+      alt: "Athletic training session"
+    },
+    {
+      title: "Archery",
+      image: "/assets/home/library.png",
+      alt: "Student practicing archery"
+    },
+    {
+      title: "Sports & Games",
+      image: "/assets/home/library.png",
+      alt: "Students playing badminton"
+    },
+    {
+      title: "Athletics",
+      image: "/assets/home/library.png",
+      alt: "Athletic training session"
+    },
+    {
+      title: "Archery",
+      image: "/assets/home/library.png",
+      alt: "Student practicing archery"
+    },
+    {
+      title: "Sports & Games",
+      image: "/assets/home/library.png",
+      alt: "Students playing badminton"
+    },
+    {
+      title: "Athletics",
+      image: "/assets/home/library.png",
+      alt: "Athletic training session"
+    },
+    {
+      title: "Archery",
+      image: "/assets/home/library.png",
+      alt: "Student practicing archery"
     }
   ];
 
   return (
-    <div className="bg-gray-50 py-12">
-      <div className="max-w-6xl mx-auto p-8">
+    <div style={{ background: "#F0F0F0 0% 0% no-repeat padding-box" }}  className=" pb-12 lg:px-40 ">
+      <div className=" mx-auto">
         {/* Header */}
         <div className="mb-8">
           <span className="inline-block bg-pink-500 text-white px-6 py-2 text-lg font-bold">
             EXTRA CURRICULAR ACTIVITIES
           </span>
+        </div>
+            {/* Header */}
+            <div className="absolute top-0">
+          <button className="bg-pink-500 text-white px-8 py-2 text-lg font-bold">
+            Director's Message
+          </button>
         </div>
 
         {/* Description */}
@@ -40,7 +91,7 @@ const ExtraCurricularActivities = () => {
         </div>
 
         {/* Activities Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {activities.map((activity, index) => (
             <div key={index} className="flex flex-col">
               <div className="relative overflow-hidden rounded-lg shadow-lg aspect-[4/3]">
