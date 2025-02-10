@@ -1,41 +1,56 @@
-import React from 'react';
+import React from "react";
 
 const FacilitiesGrid = () => {
   const facilities = [
     {
       title: "Class Room",
       image: "/assets/home/library.png",
-      alt: "Students in classroom"
+      alt: "Students in classroom",
     },
     {
       title: "Library",
       image: "/assets/home/library.png",
-      alt: "Student reading in library"
+      alt: "Student reading in library",
     },
     {
       title: "Laboratories",
       image: "/assets/home/library.png",
-      alt: "Students in laboratory"
+      alt: "Students in laboratory",
     },
     {
       title: "Computer Lab",
       image: "/assets/home/library.png",
-      alt: "Students using computers"
+      alt: "Students using computers",
     },
     {
       title: "Audio - Visual Room",
       image: "/assets/home/library.png",
-      alt: "Students in cultural costumes"
+      alt: "Students in cultural costumes",
     },
     {
       title: "Art & Crafts",
       image: "/assets/home/library.png",
-      alt: "Student doing art project"
-    }
+      alt: "Student doing art project",
+    },
+    {
+      title: "Music Room",
+      image: "/assets/home/library.png",
+      alt: "Students using computers",
+    },
+    {
+      title: "Play Grounds",
+      image: "/assets/home/library.png",
+      alt: "Students in cultural costumes",
+    },
+    {
+      title: "Hostel",
+      image: "/assets/home/library.png",
+      alt: "Student doing art project",
+    },
   ];
 
   return (
-    <div className="max-w-6xl mx-auto p-8">
+    <div className="lg:px-40 mx-auto p-8">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {facilities.map((facility, index) => (
           <div key={index} className="flex flex-col">
