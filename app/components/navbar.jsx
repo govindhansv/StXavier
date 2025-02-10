@@ -31,7 +31,7 @@ const Navbar = () => {
                 src="/assets/home/logo.png"
                 alt="St. Xavier's Logo"
                 className="object-contain"
-                width={90}  
+                width={90}
                 height={90}
               />
             </div>

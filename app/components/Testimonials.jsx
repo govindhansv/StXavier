@@ -29,14 +29,15 @@ export default function Testimonials() {
           <p className="text-xl font-bold text-gray-800">Krishna Institute of Medical Sciences</p>
           <p className="text-xl font-bold text-gray-800"> Karad</p>
         </div>
-      </div>
-
-      {/* Star Rating */}
-      <div className="flex text-yellow-500 mb-4">
+           {/* Star Rating */}
+      <div className="flex ml-auto text-yellow-500 mb-4">
         {[...Array(5)].map((_, i) => (
           <Star key={i} className="w-6 h-6 fill-current" />
         ))}
       </div>
+      </div>
+
+   
 
       {/* Testimonial Text */}
       <blockquote className="italic text-gray-700 text-base leading-relaxed mb-4">
