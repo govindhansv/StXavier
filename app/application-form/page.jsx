@@ -11,8 +11,8 @@ export default function ApplicationForm() {
       <div className=" mx-auto">
         <div className="flex items-center mb-8   px-4 py-8">
           <div className="flex items-center space-x-2">
-            <span className="text-pink-500 text-xl">←</span>
-            <span className="text-pink-500 font-medium">BACK</span>
+            <span className="text-[#FF0076] text-xl">←</span>
+            <span className="text-[#FF0076] font-medium">BACK</span>
           </div>
           <div className="flex-grow text-right">
             <span className="text-blue-600 font-bold text-2xl">
@@ -340,7 +340,7 @@ export default function ApplicationForm() {
           <div className="flex justify-start">
             <button
               type="submit"
-              className="px-8 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2"
+              className="px-8 py-2 bg-[#FF0076] text-white rounded-md hover:bg-[#FF0076] focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2"
             >
               Submit
             </button>

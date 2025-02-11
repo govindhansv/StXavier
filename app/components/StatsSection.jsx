@@ -10,7 +10,7 @@ const StatsDashboard = () => {
       <div className="flex flex-col md:flex-row justify-between mb-8 border-b pb-4">
         <div className="w-full md:w-1/2 text-center mb-4 md:mb-0">
           <div className="flex flex-col md:flex-row items-center md:items-baseline gap-2">
-            <span className="text-pink-600 text-[30px] md:text-[40px] font-bold">
+            <span className="text-[#FF0076] text-[30px] md:text-[40px] font-bold">
               PASSED OUT
             </span>
             <span className="text-blue-600 md:pl-5 text-[45px] md:text-[65px] font-bold">
@@ -20,7 +20,7 @@ const StatsDashboard = () => {
         </div>
         <div className="lg:pl-20 w-full md:w-1/2 text-center md:text-start">
           <div className="flex flex-col md:flex-row items-center md:items-baseline gap-2">
-            <span className="text-pink-600 text-[30px] md:text-[40px] font-bold">
+            <span className="text-[#FF0076] text-[30px] md:text-[40px] font-bold">
               TOTAL STAFF
             </span>
             <span className="text-blue-600 md:pl-5 text-[45px] md:text-[65px] font-bold">
@@ -46,7 +46,7 @@ const StatsDashboard = () => {
             </svg>
           </div>
           <div className="flex flex-col md:flex-row text-center md:text-start items-center gap-4">
-            <div className="text-pink-600 font-bold text-[24px] md:text-[30px] leading-tight md:px-8">
+            <div className="text-[#FF0076] font-bold text-[24px] md:text-[30px] leading-tight md:px-8">
               NATIONAL <br /> ACADEMIC <br /> AWARD
             </div>
             <div className="text-blue-600 text-[45px] md:text-[65px] font-bold">
@@ -56,7 +56,7 @@ const StatsDashboard = () => {
         </div>
         <div className="lg:pl-20 w-full md:w-1/2">
           <div className="flex flex-col md:flex-row items-center justify-center md:justify-start">
-            <div className="text-pink-600 font-bold text-[24px] md:text-[30px] leading-tight text-center md:text-start">
+            <div className="text-[#FF0076] font-bold text-[24px] md:text-[30px] leading-tight text-center md:text-start">
               STATE <br /> ACADEMIC <br /> AWARD
             </div>
             <span className="text-blue-600 text-[45px] md:text-[65px] font-bold md:pl-8">
@@ -82,7 +82,7 @@ const StatsDashboard = () => {
             </svg>
           </div>
           <div className="flex flex-col md:flex-row text-center md:text-start items-center gap-4">
-            <div className="text-pink-600 font-bold text-[24px] md:text-[30px] leading-tight md:px-8">
+            <div className="text-[#FF0076] font-bold text-[24px] md:text-[30px] leading-tight md:px-8">
               NATIONAL <br /> SPORTS <br /> AWARD
             </div>
             <div className="text-blue-600 text-[45px] md:text-[65px] font-bold">
@@ -92,7 +92,7 @@ const StatsDashboard = () => {
         </div>
         <div className="lg:pl-20 w-full md:w-1/2">
           <div className="flex flex-col md:flex-row items-center justify-center md:justify-start">
-            <div className="text-pink-600 font-bold text-[24px] md:text-[30px] leading-tight text-center md:text-start">
+            <div className="text-[#FF0076] font-bold text-[24px] md:text-[30px] leading-tight text-center md:text-start">
               STATE <br /> SPORTS <br /> AWARD
             </div>
             <span className="text-blue-600 text-[45px] md:text-[65px] font-bold md:pl-20">

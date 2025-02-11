@@ -6,8 +6,8 @@ const AdmissionForm = () => {
       <div className=" mx-auto">
         <div className="flex items-center mb-8   px-4 py-8">
           <div className="flex items-center space-x-2">
-            <span className="text-pink-500 text-xl">←</span>
-            <span className="text-pink-500 font-medium">BACK</span>
+            <span className="text-[#FF0076] text-xl">←</span>
+            <span className="text-[#FF0076] font-medium">BACK</span>
           </div>
           <div className="flex-grow text-right">
             <span className="text-blue-600 font-bold text-2xl">
@@ -89,7 +89,7 @@ const AdmissionForm = () => {
           <div className="flex justify-center mt-12">
             <button
               type="submit"
-              className="bg-pink-500 text-white mt-8 px-8 py-2 rounded hover:bg-pink-600"
+              className="bg-[#FF0076] text-white mt-8 px-8 py-2 rounded hover:bg-[#FF0076]"
             >
               Submit
             </button>

@@ -48,7 +48,7 @@ const ContactFooter = () => {
               Email:{" "}
               <a
                 href="mailto:xavierspanchgani@gmail.com"
-                className="underline text-pink-[#FF0076] hover:text-pink-600"
+                className="underline text-[#FF0076] hover:text-[#FF0076]"
               >
                 xavierspanchgani@gmail.com
               </a>
@@ -61,7 +61,7 @@ const ContactFooter = () => {
               href="#"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-pink-[#FF0076] transition transform hover:scale-110"
+              className="text-gray-600 hover:text-[#FF0076] transition transform hover:scale-110"
             >
               <FaFacebook size={24} />
             </a>
@@ -69,7 +69,7 @@ const ContactFooter = () => {
               href="#"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-pink-[#FF0076] transition transform hover:scale-110"
+              className="text-gray-600 hover:text-[#FF0076] transition transform hover:scale-110"
             >
               <FaInstagram size={24} />
             </a>
@@ -77,7 +77,7 @@ const ContactFooter = () => {
               href="#"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-pink-[#FF0076] transition transform hover:scale-110"
+              className="text-gray-600 hover:text-[#FF0076] transition transform hover:scale-110"
             >
               <FaWhatsapp size={24} />
             </a>
@@ -85,7 +85,7 @@ const ContactFooter = () => {
               href="#"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-pink-[#FF0076] transition transform hover:scale-110"
+              className="text-gray-600 hover:text-[#FF0076] transition transform hover:scale-110"
             >
               <FaMapMarkerAlt size={24} />
             </a>

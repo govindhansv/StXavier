@@ -24,7 +24,7 @@ const Eumind = () => {
             className="w-16 h-16 bg-white bg-opacity-80 rounded-full flex items-center justify-center hover:bg-opacity-100 transition-opacity"
             aria-label="Play video"
           >
-            <div className="w-0 h-0 border-t-8 border-t-transparent border-l-12 border-l-pink-[#FF0076] border-b-8 border-b-transparent ml-1"></div>
+            <div className="w-0 h-0 border-t-8 border-t-transparent border-l-12 border-l-[#FF0076] border-b-8 border-b-transparent ml-1"></div>
           </button>
         </div>
       </div>

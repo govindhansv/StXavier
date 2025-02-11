@@ -32,7 +32,7 @@ const DirectorsMessage = () => {
 
             {/* Quote mark */}
             <div className="hidden lg:block absolute right-0 -top-20">
-              <span className="text-pink-[#FF0076] text-[200px] font-serif">"</span>
+              <span className="text-[#FF0076] text-[200px] font-serif">"</span>
             </div>
 
             <p className="text-gray-700 text-base  lg:text-[22px]  leading-snug font-light  font-light pt-4 text-center lg:text-left ">

@@ -5,8 +5,8 @@ export default function EumindGallery() {
     <div className="container mx-auto px-12 py-8">
       <div className="flex items-center mb-6">
         <div className="flex items-center space-x-2">
-          <span className="text-pink-500 text-xl">←</span>
-          <span className="text-pink-500 font-medium">BACK</span>
+          <span className="text-[#FF0076] text-xl">←</span>
+          <span className="text-[#FF0076] font-medium">BACK</span>
         </div>
         <div className="flex-grow text-right">
           <span className="text-blue-600 font-bold text-2xl">EUMIND</span>
