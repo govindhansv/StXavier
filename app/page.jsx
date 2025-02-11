@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div className="relative bg-white pt-24">
+      <div className="relative bg-white pt-20 lg:pt-24">
         <Banner />
         <HeroSection />
         <StatsDashboard />

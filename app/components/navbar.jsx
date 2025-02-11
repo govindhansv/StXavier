@@ -7,26 +7,26 @@ import Image from "next/image";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const topNavItems = [
+  const navItems = [
     { label: "About Us", href: "/about" },
     { label: "Why Us", href: "/why-us" },
     { label: "Facilities", href: "/facilities" },
     { label: "EUMIND", href: "/eumind" },
-  ];
-
-  const bottomNavItems = [
+    { label: "Admissions", href: "/admissions" },
+    { label: "Our Teachers", href: "/ourteachers" },
     { label: "News & Events", href: "/news" },
     { label: "Downloads", href: "/downloads" },
     { label: "Contact Us", href: "/contact" },
   ];
 
   return (
-    <nav className="bg-white shadow-md py-5 fixed top-0 w-full z-50 h-24">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Top row with logo and first set of navigation items */}
-        <div className="flex justify-between items-center h-16">
-          <div className="flex items-center space-x-4">
-            <div className="w-16 h-16 relative">
+    <nav className="bg-white shadow-md fixed top-0 w-full z-50">
+      <div className="mx-auto px-4 sm:px-6 lg:px-40">
+        {/* Main navbar content */}
+        <div className="flex justify-between items-center h-20 md:h-32">
+          {/* Logo and School Name */}
+          <div className="flex items-center space-x-2 md:space-x-4 flex-1 md:w-2/5">
+            <div className="w-12 h-12 md:w-20 md:h-20 relative flex-shrink-0">
               <Image
                 src="/assets/home/logo.png"
                 alt="St. Xavier's Logo"
@@ -35,79 +35,112 @@ const Navbar = () => {
                 height={90}
               />
             </div>
-            <div className="hidden md:block">
-              <h1 className="text-gray-800 font-semibold text-lg">
+            <div>
+              <h1 className="text-gray-600 font-bold text-sm md:text-lg lg:text-2xl">
                 ST. XAVIER'S
               </h1>
-              <p className="text-gray-600 text-xs">
+              <p className="text-gray-600 font-bold text-xs lg:text-sm hidden md:block">
                 HIGH SCHOOL & JUNIOR COLLEGE
               </p>
-              <p className="text-gray-600 text-xs">PANCHGANI</p>
+              <p className="font-bold text-xs lg:text-sm hidden md:block">
+                PANCHGANI
+              </p>
             </div>
           </div>
 
-          {/* Desktop Navigation - Top Row */}
-          <div className="hidden md:flex items-center">
-            <div className="flex space-x-6 mr-6">
-              {topNavItems.map((item) => (
-                <Link
-                  key={item.label}
-                  href={item.href}
-                  className="text-gray-600 hover:text-gray-900 text-sm"
-                >
-                  {item.label}
-                </Link>
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex flex-col items-center w-2/5">
+            {/* Top row */}
+            <div className="flex items-center py-2">
+              {navItems.slice(0, 4).map((item, index) => (
+                <React.Fragment key={item.label}>
+                  <Link
+                    href={item.href}
+                    className="text-gray-600 hover:text-gray-900 px-3"
+                  >
+                    {item.label}
+                  </Link>
+                  {index < 3 && <span className="text-gray-300">|</span>}
+                </React.Fragment>
               ))}
             </div>
-            <button className="bg-[#FF0076] text-white px-6 py-2 rounded text-sm font-medium hover:bg-[#FF0076]">
-              Admission
-            </button>
+
+            <div className="w-full border-t border-gray-200 my-1"></div>
+
+            {/* Bottom row */}
+            <div className="flex items-center py-2">
+              {navItems.slice(6, 9).map((item, index) => (
+                <React.Fragment key={item.label}>
+                  <Link
+                    href={item.href}
+                    className="text-gray-600 hover:text-gray-900 px-3"
+                  >
+                    {item.label}
+                  </Link>
+                  {index < 2 && <span className="text-gray-300">|</span>}
+                </React.Fragment>
+              ))}
+            </div>
           </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden bg-white">
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-600 hover:text-gray-900 focus:outline-none"
-            >
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                {isMenuOpen ? (
-                  <path d="M6 18L18 6M6 6l12 12" />
-                ) : (
-                  <path d="M4 6h16M4 12h16M4 18h16" />
-                )}
-              </svg>
-            </button>
+          {/* Admission Button - Desktop */}
+          <div className="hidden md:flex w-1/5 justify-end">
+            <Link href="/admissions">
+              <button className="bg-[#FF0076] text-white px-6 py-2 rounded text-sm font-medium hover:bg-[#FF0076]/90">
+                Admission
+              </button>
+              </Link>
           </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="md:hidden p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none"
+          >
+            <svg
+              className="h-6 w-6"
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              {isMenuOpen ? (
+                <path d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path d="M4 6h16M4 12h16M4 18h16" />
+              )}
+            </svg>
+          </button>
         </div>
 
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="md:hidden py-4 bg-white">
-            {[...topNavItems, ...bottomNavItems].map((item) => (
+        {/* Mobile Navigation Menu */}
+        <div
+          className={`md:hidden transition-all duration-300 ease-in-out ${
+            isMenuOpen
+              ? "max-h-screen opacity-100 visible"
+              : "max-h-0 opacity-0 invisible"
+          }`}
+        >
+          <div className="py-2 space-y-1 border-t border-gray-200">
+            {navItems.map((item) => (
               <Link
                 key={item.label}
                 href={item.href}
-                className="block px-4 py-2 text-gray-600 hover:bg-gray-50"
+                className="block px-4 py-2 text-base font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900"
+                onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}
               </Link>
             ))}
             <div className="px-4 py-3">
-              <button className="w-full bg-[#FF0076] text-white px-6 py-2 rounded text-sm font-medium hover:bg-[#FF0076]">
+              <button className="w-full bg-[#FF0076] text-white px-6 py-2 rounded text-sm font-medium hover:bg-[#FF0076]/90">
                 Admission
               </button>
             </div>
           </div>
-        )}
+        </div>
       </div>
     </nav>
   );

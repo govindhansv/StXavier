@@ -8,7 +8,7 @@ import {
 
 const ContactFooter = () => {
   return (
-    <footer className="relative bg-gray-100 text-gray-700 py-10 border-t px-6 lg:px-40">
+    <footer className="relative text-gray-700 py-10 border-t px-6 lg:px-40">
       {/* Contact Us Button */}
 
       <div className="absolute top-0">

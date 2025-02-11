@@ -1,24 +1,36 @@
 import React from "react";
 import ContactFooter from "../components/ContactFooter";
+import Link from "next/link";
+import { ArrowLeft } from "lucide-react";
 
 export default function AdmissionPage() {
   return (
     <>
-      <div className="container ">
-        <div className="flex items-center mb-8   px-4 py-8">
-          <div className="flex items-center space-x-2">
-            <span className="text-[#FF0076] text-xl">←</span>
-            <span className="text-[#FF0076] font-medium">BACK</span>
-          </div>
-          <div className="flex-grow text-right">
-            <span className="text-blue-600 font-bold text-2xl">ADMISSION</span>
+      <div>
+        {/* Header */}
+        <div className="sticky top-0 z-10 bg-white shadow-sm lg:py-6">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-32">
+            <div className="flex justify-between items-center h-16 lg:h-20">
+              <Link href="/">
+                <button className="flex items-center text-gray-600 hover:text-gray-900 transition-colors">
+                  <ArrowLeft className="w-4 h-4 lg:w-5 lg:h-5 text-pink-600 mr-2" />
+                  <span className="text-sm lg:text-base font-medium">BACK</span>
+                </button>
+              </Link>
+
+              <h1 className="text-lg lg:text-2xl font-bold text-blue-600">
+                ADMISSION
+              </h1>
+            </div>
           </div>
         </div>
 
-        <div className="lg:px-40  py-12 bg-gray-100 space-y-8">
+        <div className="px-4 sm:px-6 lg:px-40 py-8 lg:py-12 bg-gray-100 space-y-6 lg:space-y-8">
           <div>
-            <h2 className="text-2xl font-bold mb-4">ADMISSIONS</h2>
-            <p className="text-gray-700 leading-relaxed">
+            <h2 className="text-xl lg:text-2xl font-bold mb-3 lg:mb-4">
+              ADMISSIONS
+            </h2>
+            <p className="text-base lg:text-[22px] leading-relaxed lg:leading-snug font-light">
               Admission is open to all irrespective of caste, creed, language
               and nationality. Application should be made on the prescribed
               forms available from the office. No application will be considered
@@ -30,10 +42,10 @@ export default function AdmissionPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold mb-4">
+            <h2 className="text-xl lg:text-2xl font-bold mb-3 lg:mb-4">
               ADMISSIONS TO DAY STUDENTS
             </h2>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-base lg:text-[22px] leading-relaxed lg:leading-snug font-light">
               Even though St. Xavier's is a recognised Boarding school, the
               management permits the admission of a limited number of students
               as Day Boarders, in order to open the world class facilities also
@@ -46,43 +58,57 @@ export default function AdmissionPage() {
             </p>
           </div>
         </div>
-      </div>
 
-      <div className="lg:px-40 p-12 grid grid-cols-2 gap-4  bg-gray-100">
-        
-        <button className="bg-[#FF0076] text-white py-3 px-4 rounded-lg text-center font-bold">
-        ADMISSION ENQUIRY
-        </button>
-        <button className="bg-[#FF0076] text-white py-3 px-4 rounded-lg text-center font-bold">
-          OFFLINE ADMISSION FORM
-        </button>
-        <button className="bg-[#FF0076] text-white py-3 px-4 rounded-lg text-center font-bold">
-          ONLINE ADMISSION FORM
-        </button>
-      
-      </div>
+        <div className="px-4 sm:px-6 lg:px-40 py-6 lg:py-12 grid grid-cols-1 sm:grid-cols-2 gap-4 bg-gray-100">
+          <Link
+            className="bg-[#FF0076] text-white py-3 px-4 rounded-lg text-center font-bold text-sm lg:text-base"
+            href="/admission-form"
+          >
+            ADMISSION ENQUIRY
+          </Link>
+          <Link
+            href={"/admissions"}
+            className="bg-[#FF0076] text-white py-3 px-4 rounded-lg text-center font-bold text-sm lg:text-base"
+          >
+            OFFLINE ADMISSION FORM
+          </Link>
+          <Link
+            href={"/application-form"}
+            className="bg-[#FF0076] text-white py-3 px-4 rounded-lg text-center font-bold text-sm lg:text-base w-full sm:col-span-2"
+          >
+            ONLINE ADMISSION FORM
+          </Link>
+        </div>
 
-<div className="lg:px-40 p-12 bg-gray-100">
-      <h2 className="text-2xl font-bold mb-6">GENERAL RULES</h2>
-      <div className="grid grid-cols-2 gap-8">
-        <div className="border-r border-gray-300 space-y-4">
-          <div className="pb-4 ">
-            All students have to abide by all the rules and regulations of the school failing in which they will be dismissed without notice.
-          </div>
-          <div>
-            No student will be allowed to be absent without permission
+        <div className="px-4 sm:px-6 lg:px-40 py-6 lg:py-12 bg-gray-100">
+          <h2 className="text-xl lg:text-2xl font-bold mb-4 lg:mb-6">
+            GENERAL RULES
+          </h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+            <div className="lg:border-r lg:border-gray-300 space-y-4">
+              <div className="pb-4">
+                All students have to abide by all the rules and regulations of
+                the school failing in which they will be dismissed without
+                notice.
+              </div>
+              <div>
+                No student will be allowed to be absent without permission
+              </div>
+            </div>
+            <div className="space-y-4">
+              <div className="pb-4">
+                Students are not allowed to bring any valuables like money,
+                jewellery or electronic items to school
+              </div>
+              <div>
+                Students are not allowed to bring anything for boarders from
+                outside. Any student found helping boarders to bring in anything
+                will be dismissed summarily.
+              </div>
+            </div>
           </div>
         </div>
-        <div className="space-y-4">
-          <div className="pb-4 ">
-            Students are not allowed to bring any valuables like money, jewellery or electronic items to school
-          </div>
-          <div>
-            Students are not allowed to bring anything for boarders from outside. Any student found helping boarders to bring in anything will be dismissed summarily.
-          </div>
-        </div>
       </div>
-    </div>
       <ContactFooter />
     </>
   );

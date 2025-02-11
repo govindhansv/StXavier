@@ -35,7 +35,7 @@ const DirectorsMessage = () => {
               <span className="text-[#FF0076] text-[200px] font-serif">"</span>
             </div>
 
-            <p className="text-gray-700 text-base  lg:text-[22px]  leading-snug font-light  font-light pt-4 text-center lg:text-left ">
+            <p className="text-gray-700 text-base  lg:text-[22px]  leading-snug font-light pt-4 text-center lg:text-left ">
               When I founded St. Xavier's in Panchgani, which is known as the
               education hub of Maharashtra, I had a dream. That was to create
               transformative excellence in character and quality. I do think
