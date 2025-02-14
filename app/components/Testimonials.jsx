@@ -8,9 +8,9 @@ export default function Testimonials() {
     <div className="px-6 lg:px-36 mx-auto py-12">
       {/* Section Title */}
       <div className="mb-8">
-        <span className="bg-[#FF1493] text-white px-6 py-2 text-xl font-medium">
+        <button className="bg-[#FF0076] text-white px-6 py-5 text-sm hover:bg-[#FF0076]/90 font-bold lg:text-[26px]">
           Testimonials
-        </span>
+        </button>
       </div>
 
       <div className="lg:px-36 mx-auto p-6 bg-white   relative">
@@ -59,14 +59,10 @@ export default function Testimonials() {
 
         {/* Navigation Arrows */}
         <div className="absolute inset-y-0 left-10 flex items-center">
-          <button className="bg-gray-200/50 p-2  text-3xl">
-            ←
-          </button>
+          <button className="bg-gray-200/50 p-2  text-3xl">←</button>
         </div>
         <div className="absolute inset-y-0 right-10 flex items-center">
-          <button className="bg-gray-200/50 p-2 text-3xl ">
-            →
-          </button>
+          <button className="bg-gray-200/50 p-2 text-3xl ">→</button>
         </div>
       </div>
     </div>

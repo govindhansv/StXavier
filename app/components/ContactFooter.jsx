@@ -12,7 +12,7 @@ const ContactFooter = () => {
       {/* Contact Us Button */}
 
       <div className="absolute top-0">
-        <button className="bg-[#FF0076] text-white px-8 py-2 text-lg font-bold">
+        <button className="bg-[#FF0076] text-white px-6 py-5 text-sm hover:bg-[#FF0076]/90 font-bold lg:text-[26px]">
           Contact Us
         </button>
       </div>
