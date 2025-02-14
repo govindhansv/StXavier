@@ -50,18 +50,18 @@ const FacilitiesGrid = () => {
   ];
 
   return (
-    <div className="lg:px-40 mx-auto p-8">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="lg:px-36 mx-auto p-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
         {facilities.map((facility, index) => (
-          <div key={index} className="flex flex-col">
-            <div className="relative overflow-hidden rounded-lg shadow-lg aspect-[4/3]">
+          <div key={index} className="flex flex-col mb-4">
+            <div className="relative  aspect-[4/3]">
               <img
                 src={facility.image}
                 alt={facility.alt}
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                className="w-full h-full lg:h-[310px] lg:w-[303px] object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
-            <h3 className="mt-4 text-xl text-gray-700 font-medium text-center">
+            <h3 className="mt-4 text-xl text-[#00000080] font-bold lg:text-[26px] text-start">
               {facility.title}
             </h3>
           </div>

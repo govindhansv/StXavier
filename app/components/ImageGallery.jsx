@@ -1,7 +1,7 @@
 // components/ImageGallery.js
 export default function ImageGallery() {
     return (
-      <div className="lg:px-40 mx-auto px-4 py-8">
+      <div className="lg:px-36 mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* New Year */}
           <div className="text-center">

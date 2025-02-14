@@ -9,8 +9,8 @@ const AdmissionForm = () => {
       <div className="min-h-screen bg-white">
         <div className="mx-auto">
           {/* Header */}
-          <div className="sticky top-0 z-10 bg-white shadow-sm lg:py-6">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-32">
+          <div className="sticky top-0 z-10 bg-white  lg:py-6">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-36">
               <div className="flex flex-col sm:flex-row sm:items-center py-4 sm:h-16 gap-4 sm:gap-0">
                 <Link href="/admissions">
                   <button className="flex items-center text-gray-600 hover:text-gray-900 transition-colors">
@@ -26,7 +26,7 @@ const AdmissionForm = () => {
             </div>
           </div>
 
-          <form className="bg-gray-100 space-y-6 p-4 sm:p-8 lg:px-40">
+          <form className="bg-gray-100 space-y-6 p-4 sm:p-8 lg:px-36">
             <div className="flex flex-col sm:flex-row sm:items-center gap-2">
               <label className="sm:w-64 text-gray-500">Name of Applicant</label>
               <input

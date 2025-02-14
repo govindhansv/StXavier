@@ -14,35 +14,35 @@ export default function EumindGallery() {
       </div>
       
       <div className="grid grid-cols-3 grid-rows-2 gap-4">
-        <div className="row-span-2 bg-gray-100 rounded-lg">
+        <div className="row-span-2 bg-gray-100 ">
           <img 
             src="https://www.claudeusercontent.com/api/placeholder/400/800" 
             alt="Left Side Image" 
-            className="w-full h-full object-cover rounded-lg"
+            className="w-full h-full object-cover "
           />
         </div>
         
-        <div className="bg-gray-100 rounded-lg">
+        <div className="bg-gray-100 ">
           <img 
             src="https://www.claudeusercontent.com/api/placeholder/400/400" 
             alt="Top Middle Image" 
-            className="w-full h-full object-cover rounded-lg"
+            className="w-full h-full object-cover "
           />
         </div>
         
-        <div className="row-span-2 bg-gray-100 rounded-lg">
+        <div className="row-span-2 bg-gray-100 ">
           <img 
             src="https://www.claudeusercontent.com/api/placeholder/400/800" 
             alt="Right Side Image" 
-            className="w-full h-full object-cover rounded-lg"
+            className="w-full h-full object-cover "
           />
         </div>
         
-        <div className="bg-gray-100 rounded-lg">
+        <div className="bg-gray-100 ">
           <img 
             src="https://www.claudeusercontent.com/api/placeholder/400/400" 
             alt="Bottom Middle Image" 
-            className="w-full h-full object-cover rounded-lg"
+            className="w-full h-full object-cover "
           />
         </div>
       </div>

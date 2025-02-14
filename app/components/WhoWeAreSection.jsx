@@ -2,14 +2,14 @@ import React from "react";
 
 const WhoWeAreSection = () => {
   return (
-    <div className="lg:px-40 mx-auto p-8">
+    <div className="lg:px-36 mx-auto p-8">
       <div className="mb-8">
-        <span className="inline-block bg-[#FF0076] text-white px-6 py-2 text-lg font-bold">
+        <button className="bg-[#FF0076] text-white px-6 py-5 text-sm hover:bg-[#FF0076]/90 font-bold lg:text-[26px]">
           WHO WE ARE
-        </span>
+        </button>
       </div>
 
-      <div className="text-gray-800 text-lg lg:text-[22px]  leading-snug font-light ">
+      <div className="text-gray-800 text-lg lg:text-[24px]  leading-[34px] lg:w-[1100px] font-light ">
         <p>
           St. Xavier's High School is affiliated to ICSE and Maharashtra State
           Board. St. Xavier's Junior College is Maharashtra State Board and It

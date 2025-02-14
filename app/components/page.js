@@ -13,7 +13,7 @@ const HeroSection = () => {
     <div className="relative bg-white">
       {/* Pink About Us Button */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2">
-        <button className="bg-[#FF0076] text-white px-8 py-2 rounded-md text-lg font-medium">
+        <button className="bg-[#FF0076] text-white px-8 py-2  text-lg font-medium">
           About Us
         </button>
       </div>
@@ -53,7 +53,7 @@ const HeroSection = () => {
         </div>
 
         {/* Statistics Section */}
-        <div className="mt-16 bg-gray-50 rounded-lg p-8">
+        <div className="mt-16 bg-gray-50  p-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div

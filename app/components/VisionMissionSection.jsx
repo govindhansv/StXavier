@@ -2,15 +2,15 @@ import React from "react";
 
 const VisionMissionSection = () => {
   return (
-    <div className="lg:px-40 mx-auto p-8">
+    <div className="lg:px-36 mx-auto p-8">
       <div className="grid md:grid-cols-2 gap-12">
         {/* Vision Section */}
         <div className="space-y-6">
-          <div className="inline-block bg-[#FF0076] text-white px-6 py-2 text-lg font-bold mb-6">
+          <button className="bg-[#FF0076] text-white px-6 py-5 text-sm hover:bg-[#FF0076]/90 font-bold lg:text-[26px]">
             Vision
-          </div>
+          </button>
 
-          <p className="text-gray-700 text-lg  lg:text-[22px]  leading-snug font-light  mb-8">
+          <p className="text-black text-lg  lg:text-[24px] lg:w-[550px]  leading-[29px] font-light  mb-8">
             St. Xavier's envisions an integral and holistic development of the
             child, so as to enable him/her to live a free, just and honest life,
             empowering him/her to face the world with zest and contribute to the
@@ -21,20 +21,20 @@ const VisionMissionSection = () => {
             <img
               src="/assets/home/vision.png"
               alt="Student using microscope"
-              className="w-full rounded-lg shadow-lg"
+              className="w-full"
             />
           </div>
         </div>
 
         {/* Mission Section */}
-        <div className="space-y-6">
-          <div className="inline-block bg-[#FF0076] text-white px-6 py-2 text-lg font-bold mb-6">
+        <div className="space-y-6 pl-8">
+          <button className="bg-[#FF0076] text-white px-6 py-5 text-sm hover:bg-[#FF0076]/90 font-bold lg:text-[26px]">
             Mission
-          </div>
+          </button>
 
           <div className="space-y-6">
             <div>
-              <p className="text-gray-700 text-lg  lg:text-[22px]  leading-snug font-light ">
+              <p className="text-black text-lg  lg:text-[24px] lg:w-[479px]  leading-[29px] font-light ">
                 Empower the students to be on constant pursuit of knowledge by
                 strengthening their intellectual capacities and seeking better
                 ways to assimilate knowledge.
@@ -43,7 +43,7 @@ const VisionMissionSection = () => {
             </div>
 
             <div>
-              <p className="text-gray-700 text-lg  lg:text-[22px]  leading-snug font-light ">
+              <p className="text-black text-lg  lg:text-[24px] lg:w-[479px]  leading-[29px] font-light ">
                 Enable the students to understand the changes and explosions
                 taking place in the field of knowledge.
               </p>
@@ -51,7 +51,7 @@ const VisionMissionSection = () => {
             </div>
 
             <div>
-              <p className="text-gray-700 text-lg  lg:text-[22px]  leading-snug font-light ">
+              <p className="text-black text-lg  lg:text-[24px] lg:w-[479px]  leading-[29px] font-light ">
                 Develop a creative mind, which will search for a new way of
                 being and doing at every point of life.
               </p>
@@ -59,7 +59,7 @@ const VisionMissionSection = () => {
             </div>
 
             <div>
-              <p className="text-gray-700 text-lg  lg:text-[22px]  leading-snug font-light ">
+              <p className="text-black text-lg  lg:text-[24px] lg:w-[479px]  leading-[29px] font-light ">
                 Instill in their minds an aspiration for leadership towards
                 growth and change.
               </p>
@@ -67,7 +67,7 @@ const VisionMissionSection = () => {
             </div>
 
             <div>
-              <p className="text-gray-700 text-lg  lg:text-[22px]  leading-snug font-light ">
+              <p className="text-black text-lg  lg:text-[24px] lg:w-[479px]  leading-[29px] font-light ">
                 Develop a generation who will be ambassadors of peace, joy and
                 altruism.
               </p>
@@ -75,11 +75,12 @@ const VisionMissionSection = () => {
             </div>
 
             <div>
-              <p className="text-gray-700 text-lg  lg:text-[22px]  leading-snug font-light ">
+              <p className="text-black text-lg  lg:text-[24px] lg:w-[479px]  leading-[29px] font-light ">
                 Develop a balanced emotional character and personality, leading
-                to self-awareness, motivation, self control.
+                to self-awareness, motivation, self control, empathy and good
+                social skills.
               </p>
-              <div className="border-b border-2 w-32 border-[#FF0076] my-4"></div>
+              {/* <div className="border-b border-2 w-32 border-[#FF0076] my-4"></div> */}
             </div>
           </div>
         </div>

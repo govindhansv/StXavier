@@ -10,30 +10,30 @@ const HeroSection = () => {
   ];
 
   return (
-    <div className="px-4 sm:px-6 lg:px-40 relative bg-white">
+    <div className="px-4 sm:px-6 lg:px-36 relative bg-white">
       {/* Pink About Us Button */}
-      <div className="absolute top-0 left-4 sm:left-6 lg:left-40">
-        <button className="bg-[#FF0076] text-white px-6 sm:px-8 py-2 text-base sm:text-lg font-bold">
+      <div className="absolute top-0 left-4 sm:left-6 lg:left-36">
+        <button className="bg-[#FF0076] text-white px-6 py-5 text-sm hover:bg-[#FF0076]/90 font-bold lg:text-[26px]">
           About Us
         </button>
       </div>
 
-      <div className="mx-auto pt-16 sm:pt-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+      <div className="mx-auto">
+        <div className="flex">
           {/* Left Content */}
-          <div className="text-center lg:text-left">
+          <div className="text-center lg:text-left pt-20 w-[775px]">
             <h1 className="mt-16 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[102px] font-semibold text-[#3C6DBC] mb-4 sm:mb-6">
               WELCOME
             </h1>
 
-            <h2 className="text-2xl sm:text-3xl font-medium text-gray-800 mb-4 sm:mb-6 leading-tight">
+            <h2 className="leading-[44px] tracking-wide mb-6 font-medium text-[36px] ">
               TO ST. XAVIER'S HIGH SCHOOL &
               <br className="hidden sm:block" />
               JUNIOR COLLEGE, PANCHGANI
               <br className="hidden sm:block" />
               (RESIDENTIAL)
             </h2>
-            <p className="text-base sm:text-lg md:text-[24px] font-light leading-relaxed px-4 sm:px-0">
+            <p className="leading-[34px]  md:text-[24px] text-black font-light w-[775px]">
               St. Xavier's High School, Panchgani, is a residential educational
               institution of St. Xavier's Education Trust. Panchgani, an
               evergreen hill station is a well-known education centre. Located
@@ -45,7 +45,7 @@ const HeroSection = () => {
           </div>
 
           {/* Right Image */}
-          <div className="relative h-[300px] sm:h-[400px] lg:h-[500px] mt-8 lg:mt-0">
+          <div className="relative h-[300px] sm:h-[400px] lg:h-[600px] mt-8 lg:mt-0 w-1/3">
             <img
               src="/assets/home/welcome.png"
               alt="Student on skateboard"

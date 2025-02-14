@@ -20,10 +20,10 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-white shadow-md fixed top-0 w-full z-50">
-      <div className="mx-auto px-4 sm:px-6 lg:px-40">
+    <nav className="bg-white fixed top-0 w-full z-50 h-40">
+      <div className="mx-auto px-4 sm:px-6 lg:px-36 flex flex-col justify-center">
         {/* Main navbar content */}
-        <div className="flex justify-between items-center h-20 md:h-32">
+        <div className="flex justify-between items-center h-20 md:h-40">
           {/* Logo and School Name */}
           <div className="flex items-center space-x-2 md:space-x-4 flex-1 md:w-2/5">
             <div className="w-12 h-12 md:w-20 md:h-20 relative flex-shrink-0">
@@ -49,23 +49,23 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex flex-col items-center w-2/5">
+          <div className="hidden md:flex flex-col items-center w-3/7">
             {/* Top row */}
-            <div className="flex items-center py-2">
+            <div className="flex items-center py-2 ">
               {navItems.slice(0, 4).map((item, index) => (
                 <React.Fragment key={item.label}>
                   <Link
                     href={item.href}
-                    className="text-gray-600 hover:text-gray-900 px-3"
+                    className="text-gray-500 hover:text-gray-900 px-3 text-[20px] font-medium"
                   >
                     {item.label}
                   </Link>
-                  {index < 3 && <span className="text-gray-300">|</span>}
+                  {index < 3 && <span className="text-[#707070]">|</span>}
                 </React.Fragment>
               ))}
             </div>
 
-            <div className="w-full border-t border-gray-200 my-1"></div>
+            <div className="w-full border-t border-gray-400 my-1"></div>
 
             {/* Bottom row */}
             <div className="flex items-center py-2">
@@ -73,11 +73,11 @@ const Navbar = () => {
                 <React.Fragment key={item.label}>
                   <Link
                     href={item.href}
-                    className="text-gray-600 hover:text-gray-900 px-3"
+                    className="text-gray-500 hover:text-gray-900 px-3 text-[20px] font-medium"
                   >
                     {item.label}
                   </Link>
-                  {index < 2 && <span className="text-gray-300">|</span>}
+                  {index < 2 && <span className="text-gray-400">|</span>}
                 </React.Fragment>
               ))}
             </div>
@@ -86,16 +86,16 @@ const Navbar = () => {
           {/* Admission Button - Desktop */}
           <div className="hidden md:flex w-1/5 justify-end">
             <Link href="/admissions">
-              <button className="bg-[#FF0076] text-white px-6 py-2 rounded text-sm font-medium hover:bg-[#FF0076]/90">
+              <button className="bg-[#FF0076] text-white px-3 py-3 text-sm hover:bg-[#FF0076]/90 font-bold lg:text-[20px]">
                 Admission
               </button>
-              </Link>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none"
+            className="md:hidden p-2  text-gray-600 hover:bg-gray-100 focus:outline-none"
           >
             <svg
               className="h-6 w-6"

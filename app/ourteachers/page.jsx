@@ -15,7 +15,7 @@ export default function TeachersPage() {
         <img
           src="https://www.claudeusercontent.com/api/placeholder/1200/400"
           alt="Teachers Group Photo"
-          className="w-full h-auto object-cover rounded-lg shadow-md"
+          className="w-full h-auto object-cover  "
         />
       </div>
 
@@ -24,7 +24,7 @@ export default function TeachersPage() {
           <img
             src="https://www.claudeusercontent.com/api/placeholder/300/300"
             alt="Principal"
-            className="w-full rounded-lg mb-2 shadow-md"
+            className="w-full  mb-2 "
           />
           <p className="text-blue-500 font-medium">PRINCIPAL</p>
         </div>
@@ -32,7 +32,7 @@ export default function TeachersPage() {
           <img
             src="https://www.claudeusercontent.com/api/placeholder/300/300"
             alt="Madhuri"
-            className="w-full rounded-lg mb-2 shadow-md"
+            className="w-full  mb-2 "
           />
           <p className="font-medium">Madhuri</p>
         </div>
@@ -40,7 +40,7 @@ export default function TeachersPage() {
           <img
             src="https://www.claudeusercontent.com/api/placeholder/300/300"
             alt="Kareena"
-            className="w-full rounded-lg mb-2 shadow-md"
+            className="w-full  mb-2 "
           />
           <p className="font-medium">Kareena</p>
         </div>
@@ -48,7 +48,7 @@ export default function TeachersPage() {
           <img
             src="https://www.claudeusercontent.com/api/placeholder/300/300"
             alt="Manisha"
-            className="w-full rounded-lg mb-2 shadow-md"
+            className="w-full  mb-2 "
           />
           <p className="font-medium">Manisha</p>
         </div>
@@ -58,7 +58,7 @@ export default function TeachersPage() {
           <img
             src="https://www.claudeusercontent.com/api/placeholder/300/300"
             alt="Principal"
-            className="w-full rounded-lg mb-2 shadow-md"
+            className="w-full  mb-2 "
           />
           <p className="text-blue-500 font-medium">PRINCIPAL</p>
         </div>
@@ -66,7 +66,7 @@ export default function TeachersPage() {
           <img
             src="https://www.claudeusercontent.com/api/placeholder/300/300"
             alt="Madhuri"
-            className="w-full rounded-lg mb-2 shadow-md"
+            className="w-full  mb-2 "
           />
           <p className="font-medium">Madhuri</p>
         </div>
@@ -74,7 +74,7 @@ export default function TeachersPage() {
           <img
             src="https://www.claudeusercontent.com/api/placeholder/300/300"
             alt="Kareena"
-            className="w-full rounded-lg mb-2 shadow-md"
+            className="w-full  mb-2 "
           />
           <p className="font-medium">Kareena</p>
         </div>
@@ -82,7 +82,7 @@ export default function TeachersPage() {
           <img
             src="https://www.claudeusercontent.com/api/placeholder/300/300"
             alt="Manisha"
-            className="w-full rounded-lg mb-2 shadow-md"
+            className="w-full  mb-2 "
           />
           <p className="font-medium">Manisha</p>
         </div>
@@ -92,7 +92,7 @@ export default function TeachersPage() {
           <img
             src="https://www.claudeusercontent.com/api/placeholder/300/300"
             alt="Principal"
-            className="w-full rounded-lg mb-2 shadow-md"
+            className="w-full  mb-2 "
           />
           <p className="text-blue-500 font-medium">PRINCIPAL</p>
         </div>
@@ -100,7 +100,7 @@ export default function TeachersPage() {
           <img
             src="https://www.claudeusercontent.com/api/placeholder/300/300"
             alt="Madhuri"
-            className="w-full rounded-lg mb-2 shadow-md"
+            className="w-full  mb-2 "
           />
           <p className="font-medium">Madhuri</p>
         </div>
@@ -108,7 +108,7 @@ export default function TeachersPage() {
           <img
             src="https://www.claudeusercontent.com/api/placeholder/300/300"
             alt="Kareena"
-            className="w-full rounded-lg mb-2 shadow-md"
+            className="w-full  mb-2 "
           />
           <p className="font-medium">Kareena</p>
         </div>
@@ -116,7 +116,7 @@ export default function TeachersPage() {
           <img
             src="https://www.claudeusercontent.com/api/placeholder/300/300"
             alt="Manisha"
-            className="w-full rounded-lg mb-2 shadow-md"
+            className="w-full  mb-2 "
           />
           <p className="font-medium">Manisha</p>
         </div>
@@ -126,7 +126,7 @@ export default function TeachersPage() {
           <img
             src="https://www.claudeusercontent.com/api/placeholder/300/300"
             alt="Principal"
-            className="w-full rounded-lg mb-2 shadow-md"
+            className="w-full  mb-2 "
           />
           <p className="text-blue-500 font-medium">PRINCIPAL</p>
         </div>
@@ -134,7 +134,7 @@ export default function TeachersPage() {
           <img
             src="https://www.claudeusercontent.com/api/placeholder/300/300"
             alt="Madhuri"
-            className="w-full rounded-lg mb-2 shadow-md"
+            className="w-full  mb-2 "
           />
           <p className="font-medium">Madhuri</p>
         </div>
@@ -142,7 +142,7 @@ export default function TeachersPage() {
           <img
             src="https://www.claudeusercontent.com/api/placeholder/300/300"
             alt="Kareena"
-            className="w-full rounded-lg mb-2 shadow-md"
+            className="w-full  mb-2 "
           />
           <p className="font-medium">Kareena</p>
         </div>
@@ -150,7 +150,7 @@ export default function TeachersPage() {
           <img
             src="https://www.claudeusercontent.com/api/placeholder/300/300"
             alt="Manisha"
-            className="w-full rounded-lg mb-2 shadow-md"
+            className="w-full  mb-2 "
           />
           <p className="font-medium">Manisha</p>
         </div>

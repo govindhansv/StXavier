@@ -2,14 +2,14 @@ import React from "react";
 
 const WhyUsSection = () => {
   return (
-    <div className="lg:px-40 mx-auto p-8">
+    <div className="lg:px-36 mx-auto p-8">
       <div className="mb-8">
-        <span className="inline-block bg-[#FF0076] text-white px-6 py-2 text-lg font-bold">
+        <button className="bg-[#FF0076] text-white px-6 py-5 text-sm hover:bg-[#FF0076]/90 font-bold lg:text-[26px]">
           Why Us
-        </span>
+        </button>
       </div>
 
-      <div className="text-gray-800 text-lg  lg:text-[22px]  leading-snug font-light ">
+      <div className="text-gray-800 text-lg  lg:text-[24px] w-[1081px] leading-[34px] font-light py-8">
         <p>
           St. Xavier's provides holistic education with qualified, multilingual
           staff, balanced meals, and a nurturing environment at Alphonsa Hostel.

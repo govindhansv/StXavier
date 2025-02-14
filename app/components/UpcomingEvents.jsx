@@ -4,14 +4,14 @@ import React from "react";
 
 const Event = ({ month, date, title }) => (
   <div className="flex flex-col items-center relative">
-    <div className="text-gray-500 uppercase text-sm lg:text-[24px] font-bold text-[#00000080] mb-1">
+    <div className="text-[#00000080] uppercase text-sm lg:text-[28px] font-bold  mb-4">
       {month}
     </div>
-    <div className="text-gray-700 text-5xl mb-4 lg:text-[60px] font-bold text-[#00000080]">
+    <div className="text-[#00000080] text-5xl mb-4 lg:text-[71px] font-bold ">
       {date}
     </div>
-    <div className="w-0 h-0 border-l-[12px] border-l-transparent border-r-[12px] border-r-transparent border-t-[12px] border-t-pink-600 mb-4"></div>
-    <div className="text-center text-sm font-normal text-[26px] leading-tight max-w-[180px]">
+    <div className="w-0 h-0 border-l-[16px] border-l-transparent border-r-[16px] border-r-transparent border-t-[16px] border-t-[#FF0076] mb-4"></div>
+    <div className="text-cente text-center text-[30px] leading-[37px] max-w-[300px] font-medium">
       {title}
     </div>
   </div>
@@ -19,9 +19,9 @@ const Event = ({ month, date, title }) => (
 
 const UpcomingEvents = () => {
   return (
-    <div className="lg:mx-40 mx-auto border bg-white mb-16 px-8 py-8">
+    <div className="lg:mx-36 mx-auto border bg-white mb-16 px-16 py-20">
       <div className="flex justify-between items-start mb-4">
-        <h2 className="font-bold text-[#00000080] lg:text-[22px] text-lg">
+        <h2 className="font-bold text-[#00000080] lg:text-[24px] text-lg mb-8">
           UPCOMING EVENTS
         </h2>
         <div className="flex gap-2">
