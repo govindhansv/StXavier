@@ -21,21 +21,21 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white fixed top-0 w-full z-50 h-40">
-      <div className="mx-auto px-4 sm:px-6 lg:px-36 flex flex-col justify-center">
+      <div className="mx-auto px-4 sm:px-6 lg:px-24 flex flex-col justify-center">
         {/* Main navbar content */}
         <div className="flex justify-between items-center h-20 md:h-40">
           {/* Logo and School Name */}
           <div className="flex items-center space-x-2 md:space-x-4 flex-1 md:w-2/5">
-            <div className="w-12 h-12 md:w-20 md:h-20 relative flex-shrink-0">
+            <div className="w-12 h-12 md:w-full md:h-auto relative flex-shrink-0">
               <Image
-                src="/assets/home/logo.png"
+                src="/assets/logo/logo.png"
                 alt="St. Xavier's Logo"
                 className="object-contain"
-                width={90}
-                height={90}
+                width={500}
+                height={500}
               />
             </div>
-            <div>
+            {/* <div>
               <h1 className="text-gray-600 font-bold text-sm md:text-lg lg:text-2xl">
                 ST. XAVIER'S
               </h1>
@@ -45,8 +45,9 @@ const Navbar = () => {
               <p className="font-bold text-xs lg:text-sm hidden md:block">
                 PANCHGANI
               </p>
-            </div>
+            </div> */}
           </div>
+          <div className="w-16"></div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex flex-col items-center w-3/7">

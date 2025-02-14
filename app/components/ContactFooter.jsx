@@ -10,90 +10,81 @@ const ContactFooter = () => {
   return (
     <footer className="relative text-gray-700 py-10 border-t px-6 lg:px-36">
       {/* Contact Us Button */}
-
-      <div className="absolute top-0">
-        <button className="bg-[#FF0076] text-white px-6 py-5 text-sm hover:bg-[#FF0076]/90 font-bold lg:text-[26px]">
+      <div className="absolute -top-7 left-6 lg:left-36">
+        <button className="bg-[#FF0076] text-white px-6 py-5 text-sm hover:bg-[#FF0076]/90 font-bold lg:text-[26px] transition-colors">
           Contact Us
         </button>
       </div>
-      <div className="relative mx-auto">
+
+      <div className="max-w-7xl mx-auto">
         {/* Main Content */}
-        <div className="flex flex-col md:flex-row justify-between items-center mt-12">
+        <div className="flex flex-col md:flex-row justify-between items-start gap-8 mt-12">
           {/* Logo and Name */}
-          <div className="flex flex-col items-center md:items-start text-center md:text-left">
+          <div className="w-24 h-24 md:w-1/3 md:h-48 relative flex-shrink-0 mx-auto md:mx-0">
             <Image
-              src="/assets/home/logo.png"
+              src="/assets/logo/logo.png"
               alt="St. Xavier's Logo"
-              width={90}
-              height={90}
+              className="object-contain"
+              width={500}
+              height={500}
             />
-            <h3 className="text-lg font-bold mt-2 text-gray-800">
-              ST. XAVIER'S
-            </h3>
-            <p className="text-sm text-gray-600">HIGH SCHOOL, PANCHGANI</p>
           </div>
 
-          {/* Address and Contact */}
-          <div className="mt-6 md:mt-0 text-center md:text-left">
-            <p className="text-sm leading-relaxed text-gray-700">
-              St. Xavier's High School,{" "}
-              <span className="font-bold">Panchgani</span> P.O.,
-              <br />
-              Tal - Mahabaleshwar, Dist - Satara, Maharashtra, India - 412 805
-            </p>
-            <p className="mt-2 text-sm font-bold text-gray-800">
-              +91 9975064585 | +91 8390850053 | +91 7066090694
-            </p>
-            <p className="mt-1 text-sm text-gray-700">
-              Email:{" "}
-              <a
-                href="mailto:xavierspanchgani@gmail.com"
-                className="underline text-[#FF0076] hover:text-[#FF0076]"
-              >
-                xavierspanchgani@gmail.com
-              </a>
-            </p>
-          </div>
+          {/* Address, Contact, and Social Section */}
+          <div className="flex-1 space-y-6">
+            {/* Address */}
+            <div className="text-center md:text-left">
+              <p className="text-sm leading-relaxed text-gray-700 lg:text-[24px]">
+                St. Xavier's High School,{" "}
+                <span className="font-bold">Panchgani</span> P.O.,
+                <br />
+                Tal - Mahabaleshwar, Dist - Satara, Maharashtra, India - 412 805
+              </p>
+            </div>
 
-          {/* Social Icons */}
-          <div className="mt-6 md:mt-0 flex space-x-5">
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 hover:text-[#FF0076] transition transform hover:scale-110"
-            >
-              <FaFacebook size={24} />
-            </a>
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 hover:text-[#FF0076] transition transform hover:scale-110"
-            >
-              <FaInstagram size={24} />
-            </a>
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 hover:text-[#FF0076] transition transform hover:scale-110"
-            >
-              <FaWhatsapp size={24} />
-            </a>
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 hover:text-[#FF0076] transition transform hover:scale-110"
-            >
-              <FaMapMarkerAlt size={24} />
-            </a>
+            {/* Contact Information */}
+            <div className="space-y-2">
+              <p className="text-sm lg:text-[24px] font-bold text-gray-800 text-center md:text-left">
+                +91 9975064585 <span className="text-[#FF0076]">|</span> +91
+                8390850053 <span className="text-[#FF0076]">|</span> +91
+                7066090694
+              </p>
+              <p className="text-sm text-gray-700 text-center md:text-left pt-4">
+                <span className="lg:text-[24px] pr-4">Email: </span>
+                <a
+                  href="mailto:xavierspanchgani@gmail.com"
+                  className="underline lg:text-[24px] hover:text-[#FF0076]/90 transition-colors"
+                >
+                  xavierspanchgani@gmail.com
+                </a>
+              </p>
+            </div>
+
+            {/* Social Icons */}
+            <div className="flex justify-center md:justify-start space-x-5">
+              {[
+                { Icon: FaFacebook, label: "Facebook" },
+                { Icon: FaInstagram, label: "Instagram" },
+                { Icon: FaWhatsapp, label: "WhatsApp" },
+                { Icon: FaMapMarkerAlt, label: "Location" },
+              ].map(({ Icon, label }) => (
+                <a
+                  key={label}
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-[#FF0076] transition-all transform hover:scale-110"
+                  aria-label={label}
+                >
+                  <Icon size={24} />
+                </a>
+              ))}
+            </div>
           </div>
         </div>
 
         {/* Footer Bottom */}
-        <div className="border-t mt-6 pt-4 text-center text-sm text-gray-500">
+        <div className="border-t mt-8 pt-4 text-center text-sm text-gray-500">
           © {new Date().getFullYear()} All rights reserved to St. Xavier's High
           School, Panchgani
         </div>

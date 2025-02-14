@@ -50,8 +50,8 @@ const FacilitiesGrid = () => {
   ];
 
   return (
-    <div className="lg:px-36 mx-auto p-8">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+    <div className="lg:px-36 mx-auto py-8 flex flex-col items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[74px] mb-8 ">
         {facilities.map((facility, index) => (
           <div key={index} className="flex flex-col mb-4">
             <div className="relative  aspect-[4/3]">
