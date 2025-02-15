@@ -28,12 +28,13 @@ import MWhyUsSection from "./components/mobile/MWhyUsSection";
 import MVisionMissionSection from "./components/mobile/MVisionMissionSection";
 import MTeachersSection from "./components/mobile/MTeachersSection";
 import MTestimonials from "./components/mobile/MTestimonials";
+import MNavbar from "./components/mobile/MNavbar";
 
 export default function Home() {
   return (
     <>
-      {/* <Navbar /> */}
       <div className="relative bg-white pt-20 lg:pt-24 hidden lg:block">
+      <Navbar />
         <Banner />
         <HeroSection />
         <StatsDashboard />
@@ -55,6 +56,7 @@ export default function Home() {
         <ContactFooter />
       </div>
       <div className="relative bg-white pt-20 lg:pt-24 block lg:hidden">
+        <MNavbar />
         <MBanner />
         <MHeroSection />
         <MStatsDashboard />
