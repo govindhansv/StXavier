@@ -26,7 +26,7 @@ const MNavbar = () => {
         <div className="flex justify-between items-center h-20 md:h-40">
           {/* Logo and School Name */}
           <div className="flex items-center space-x-2 md:space-x-4 flex-1">
-  <div className="w-24 h-16 md:w-full md:h-auto relative flex-shrink-0"> {/* Increased width and height for mobile */}
+  <div className=" md:w-full md:h-auto relative flex-shrink-0"> {/* Increased width and height for mobile */}
     <Image
       src="/assets/logo/logo.png"
       alt="St. Xavier's Logo"

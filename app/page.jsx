@@ -29,6 +29,7 @@ import MVisionMissionSection from "./components/mobile/MVisionMissionSection";
 import MTeachersSection from "./components/mobile/MTeachersSection";
 import MTestimonials from "./components/mobile/MTestimonials";
 import MNavbar from "./components/mobile/MNavbar";
+import MContactFooter from "./components/mobile/MContactFooter";
 
 export default function Home() {
   return (
@@ -75,7 +76,7 @@ export default function Home() {
         <PreviousEvents />
         <ImageGallery />
         <MTestimonials />
-        <ContactFooter />
+        <MContactFooter />
       </div>
     </>
   );
