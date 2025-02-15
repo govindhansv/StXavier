@@ -26,7 +26,9 @@ const AdmissionForm = () => {
             </div>
           </div>
 
-          <form className="bg-gray-100 space-y-6 p-4 sm:p-8 lg:px-36">
+          <form action={"https://api.staticforms.xyz/submit"} className="bg-gray-100 space-y-6 p-4 sm:p-8 lg:px-36">
+          <input type="hidden" name="accessKey" value="006037a4-a0f9-4bb7-9e2f-d433aef27004" />
+
             <div className="flex flex-col sm:flex-row sm:items-center gap-2">
               <label className="sm:w-64 text-gray-500">Name of Applicant</label>
               <input
@@ -115,7 +117,7 @@ const AdmissionForm = () => {
                 className="w-full sm:flex-1 p-2 border rounded bg-white"
               />
             </div>
-
+            <input type="hidden" name="redirectTo" value="http://localhost:3000/admissions"/>
             <div className="flex justify-center mt-8">
               <button
                 type="submit"
