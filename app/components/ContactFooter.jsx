@@ -10,7 +10,7 @@ const ContactFooter = () => {
   return (
     <footer className="relative text-gray-700 py-10 border-t px-6 lg:px-36">
       {/* Contact Us Button */}
-      <div className="absolute -top-7 left-6 lg:left-36">
+      <div className="absolute top-0 left-6 lg:left-36">
         <button className="bg-[#FF0076] text-white px-6 py-5 text-sm hover:bg-[#FF0076]/90 font-bold lg:text-[26px] transition-colors">
           Contact Us
         </button>
