@@ -30,29 +30,37 @@ export default function EumindDetails() {
       </p>
 
       {/* Connection Section */}
-      <h2 className="text-lg mb-8  lg:text-[20px]  leading-snug font-light ">Here's how we connect:</h2>
+      <h2 className="text-lg mb-8  lg:text-[20px]  leading-snug font-light ">
+        Here's how we connect:
+      </h2>
 
       {/* Two Column Grid */}
-      <div className="grid md:grid-cols-2 gap-8 mb-12">
-        {/* E-Journal Project */}
-        <div>
+      <div className="grid md:grid-cols-2 gap-8 mb-12 items-start justify-start">
+        {/* Left Section */}
+        <div className="flex flex-col">
           <h3 className="font-bold text-[24px]">E-Journal Project</h3>
-          <p className="  lg:text-[20px]  leading-snug font-light ">
+          <p className="lg:text-[20px] leading-snug font-light pr-4">
             A digital bridge where students from across continents share ideas,
             publish articles, and engage in enriching video conferences—bringing
             minds together, one click at a time.
           </p>
         </div>
 
-        {/* Physical Exchange */}
-        <div>
-          <h3 className="font-bold text-[24px]">Physical Exchange</h3>
-          <p className=" lg:text-[20px]  leading-snug font-light lg:w-[472px]">
-            The heart of EUMIND, where friendships cross borders. Each November,
-            European students experience the vibrancy of our school, while our
-            students get to explore European schools in May, embracing new
-            cultures and creating memories for a lifetime.
-          </p>
+        {/* Right Section with Divider */}
+        <div className="flex items-center gap-8 ">
+          {/* Divider */}
+          <div className="h-[180px] border-gray-600 border-r-[1px]  mr-4"></div>
+
+          {/* Content */}
+          <div className="flex flex-col">
+            <h3 className="font-bold text-[24px]">Physical Exchange</h3>
+            <p className="lg:text-[20px] leading-snug font-light lg:w-[472px]">
+              The heart of EUMIND, where friendships cross borders. Each
+              November, European students experience the vibrancy of our school,
+              while our students get to explore European schools in May,
+              embracing new cultures and creating memories for a lifetime.
+            </p>
+          </div>
         </div>
       </div>
 

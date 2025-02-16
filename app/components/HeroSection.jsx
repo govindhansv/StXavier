@@ -22,18 +22,18 @@ const HeroSection = () => {
         <div className="flex">
           {/* Left Content */}
           <div className="text-center lg:text-left pt-20 w-[775px]">
-            <h1 className="mt-16 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[102px] font-semibold text-[#3C6DBC] mb-4 sm:mb-6">
+            <h1 className="mt-16 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[90px] font-semibold text-[#3C6DBC] mb-4 sm:mb-6">
               WELCOME
             </h1>
 
-            <h2 className="leading-[44px] tracking-wide mb-6 font-medium text-[36px] ">
+            <h2 className="leading-[40px] tracking-wide mb-6 font-medium text-[32px] ">
               TO ST. XAVIER'S HIGH SCHOOL &
               <br className="hidden sm:block" />
               JUNIOR COLLEGE, PANCHGANI
               <br className="hidden sm:block" />
               (RESIDENTIAL)
             </h2>
-            <p className="leading-[30px]  md:text-[24px] text-black font-light w-[775px]">
+            <p className="leading-[30px]  md:text-[24px] text-black font-light w-[675px]">
               St. Xavier's High School, Panchgani, is a residential educational
               institution of St. Xavier's Education Trust. Panchgani, an
               evergreen hill station is a well-known education centre. Located
@@ -49,7 +49,7 @@ const HeroSection = () => {
             <img
               src="/assets/home/welcome.png"
               alt="Student on skateboard"
-              className="object-contain w-full h-full"
+              className="object-contain w-full h-[800px]"
             />
           </div>
         </div>

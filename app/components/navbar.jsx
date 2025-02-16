@@ -20,17 +20,17 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-white fixed top-0 w-full z-50 h-32">
+    <nav className="bg-white fixed top-0 w-full z-50">
       <div className="mx-auto px-4 sm:px-6 lg:px-24 flex flex-col justify-center pr-8">
         {/* Main navbar content */}
         <div className="flex justify-between items-center h-20 md:h-32">
           {/* Logo and School Name */}
           <div className="flex items-center space-x-2 md:space-x-4 flex-1 md:w-2/5">
-            <div className="w-12 h-12 md:w-full md:h-auto relative flex-shrink-0">
+            <div className="w-12 h-12 md:w-full md:h-auto relative flex-shrink-0 pr-12">
               <Image
                 src="/assets/logo/logo.png"
                 alt="St. Xavier's Logo"
-                className="object-contain"
+                className="object-contain h-28"
                 width={500}
                 height={500}
               />
@@ -50,14 +50,16 @@ const Navbar = () => {
           <div className="w-16"></div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex flex-col items-center w-3/7">
+          <div className="hidden md:flex flex-col items-start w-3/7">
             {/* Top row */}
-            <div className="flex items-center py-2 ">
+            <div className="flex items-start justify-start py-2 ">
               {navItems.slice(0, 4).map((item, index) => (
                 <React.Fragment key={item.label}>
                   <Link
                     href={item.href}
-                    className="text-gray-500 hover:text-gray-900 px-3 text-[20px] font-medium"
+                    className={`text-gray-500 hover:text-gray-900 text-[20px] font-medium ${
+                      index == 0 ? `pr-3` : `pl-3`
+                    } ${index == 3 ? `pl-3` : `pr-3`} `}
                   >
                     {item.label}
                   </Link>
@@ -74,7 +76,9 @@ const Navbar = () => {
                 <React.Fragment key={item.label}>
                   <Link
                     href={item.href}
-                    className="text-gray-500 hover:text-gray-900 px-3 text-[20px] font-medium"
+                    className={`text-gray-500 hover:text-gray-900 text-[20px] font-medium ${
+                      index == 0 ? `pr-3` : `pl-3`
+                    } ${index == 2 ? `pl-3` : `pr-3`} `}
                   >
                     {item.label}
                   </Link>
@@ -85,7 +89,7 @@ const Navbar = () => {
           </div>
 
           {/* Admission Button - Desktop */}
-          <div className="hidden md:flex w-1/5 justify-end">
+          <div className="hidden md:flex w-[160px] justify-end">
             <Link href="/admissions">
               <button className="bg-[#FF0076] text-white px-3 py-3 text-sm hover:bg-[#FF0076]/90 font-bold lg:text-[20px]">
                 Admission

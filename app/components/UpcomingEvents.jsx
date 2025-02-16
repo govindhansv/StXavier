@@ -19,7 +19,10 @@ const Event = ({ month, date, title }) => (
 
 const UpcomingEvents = () => {
   return (
-    <div style={{ background: "#F0F0F0 0% 0% no-repeat padding-box" }} className="pb-2">
+    <div
+      style={{ background: "#F0F0F0 0% 0% no-repeat padding-box" }}
+      className="pb-2"
+    >
       <div className="lg:mx-36 mx-auto border bg-white mb-16 px-16 py-12">
         <div className="flex justify-between items-start mb-4">
           <h2 className="font-bold text-[#00000080] lg:text-[20px] text-lg mb-8">
@@ -27,10 +30,10 @@ const UpcomingEvents = () => {
           </h2>
           <div className="flex gap-2">
             <button className="text-[#FF1493] hover:opacity-80 font-bold">
-              <ChevronLeftIcon className="h-6 w-6" />
+              <div className="w-0 h-0 border-t-[16px] border-t-transparent border-b-[16px] border-b-transparent border-r-[16px] border-r-[#FF0076] mb-4"></div>
             </button>
             <button className="text-[#FF1493] hover:opacity-80">
-              <ChevronRightIcon className="h-6 w-6" />
+              <div className="w-0 h-0 border-t-[16px] border-t-transparent border-b-[16px] border-b-transparent border-l-[16px] border-l-[#FF0076] mb-4"></div>
             </button>
           </div>
         </div>
@@ -43,7 +46,7 @@ const UpcomingEvents = () => {
             date="21"
             title={
               <>
-                25<sup>TH</sup> ANNIVERSARY CELEBRATIONS AND ANNUAL DAY 
+                25<sup>TH</sup> ANNIVERSARY CELEBRATIONS AND ANNUAL DAY
               </>
             }
           />

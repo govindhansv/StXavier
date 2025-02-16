@@ -1,7 +1,7 @@
 // components/Testimonials.js
 import Image from "next/image";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
-import { Star } from "lucide-react";
+import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 
 export default function Testimonials() {
   return (
@@ -38,7 +38,7 @@ export default function Testimonials() {
             />
             <div className="pl-8">
               <h2 className="text-[20px] font-bold text-gray-800">
-                Dr. Josephine Samson
+                Dr. Josephine Samson,
               </h2>
               <p className="text-[24px] font-medium text-gray-800">
                 M.D. Community Medicine
@@ -50,7 +50,7 @@ export default function Testimonials() {
           </div>
 
           {/* Testimonial Text */}
-          <blockquote className="  text-base lg:text-[16px] leading-snug font-light  mb-4">
+          <blockquote className="  text-base lg:text-[20px] leading-snug font-light  mb-4">
             In 2004, I entered my residential school as a quiet, unsure student,
             overwhelmed by the transition. Initially, I struggled academically
             and hesitated in sports and extracurriculars, but the constant
@@ -65,10 +65,14 @@ export default function Testimonials() {
 
           {/* Navigation Arrows */}
           <div className="absolute inset-y-0 left-10 flex items-center">
-            <button className=" p-2  text-3xl">←</button>
+            <button className=" p-2 text-3xl font-light">
+              <ChevronLeft size={48} strokeWidth={1} />
+            </button>
           </div>
           <div className="absolute inset-y-0 right-10 flex items-center">
-            <button className="p-2 text-3xl ">→</button>
+            <button className="p-2 text-3xl">
+              <ChevronRight size={48} strokeWidth={1} />
+            </button>
           </div>
         </div>
       </div>

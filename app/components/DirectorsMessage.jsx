@@ -16,11 +16,11 @@ const DirectorsMessage = () => {
 
         <div className="flex flex-col lg:flex-row gap-8 items-center lg:items-start relative mt-16">
           {/* Image */}
-          <div className="w-full lg:w-1/4 flex justify-center lg:justify-start">
+          <div className="w-full lg:w-[220px] pr-16 flex justify-center lg:justify-start">
             <img
               src="/assets/homeimg/director.jpg"
               alt="Fr. Tomy Kariyilakulam"
-              className="h-48 lg:h-64 object-contain"
+              className="h-36 lg:h-48 w-48 object-cover"
             />
           </div>
 
@@ -31,12 +31,12 @@ const DirectorsMessage = () => {
             </h2>
 
             {/* Quote mark */}
-            <div className="hidden lg:block absolute right-0 -top-20">
+            <div className="hidden lg:block absolute -right-20 -top-20">
             <span className="quote text-[#FF0076] text-[160px] font-serif ">"</span>
 
             </div>
 
-            <p className="text-base  lg:text-[20px]  lg:w-[796px] font-light pt-4 text-center lg:text-left leading-[30px]">
+            <p className="text-base  lg:text-[20px]  lg:w-[796px] font-light pt-4 text-center lg:text-left leading-[30px] pr-6">
               When I founded St. Xavier's in Panchgani, which is known as the
               education hub of Maharashtra, I had a dream. That was to create
               transformative excellence in character and quality. I do think
