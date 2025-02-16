@@ -4,47 +4,47 @@ const FacilitiesGrid = () => {
   const facilities = [
     {
       title: "Class Room",
-      image: "/assets/home/library.png",
+      // image: "/assets/home/library.png",
       alt: "Students in classroom",
     },
     {
       title: "Library",
-      image: "/assets/home/library.png",
+      image: "/assets/homeimg/library.jpg",
       alt: "Student reading in library",
     },
     {
       title: "Laboratories",
-      image: "/assets/home/library.png",
+      // image: "/assets/home/library.png",
       alt: "Students in laboratory",
     },
     {
       title: "Computer Lab",
-      image: "/assets/home/library.png",
+      // image: "/assets/home/library.png",
       alt: "Students using computers",
     },
     {
       title: "Audio - Visual Room",
-      image: "/assets/home/library.png",
+      image: "/assets/homeimg/audiovisualroom.jpg",
       alt: "Students in cultural costumes",
     },
     {
       title: "Art & Crafts",
-      image: "/assets/home/library.png",
+      // image: "/assets/home/library.png",
       alt: "Student doing art project",
     },
     {
       title: "Music Room",
-      image: "/assets/home/library.png",
+      image: "/assets/homeimg/musicroom.jpg",
       alt: "Students using computers",
     },
     {
       title: "Play Grounds",
-      image: "/assets/home/library.png",
+      image: "/assets/homeimg/playgrounds.jpeg",
       alt: "Students in cultural costumes",
     },
     {
       title: "Hostel",
-      image: "/assets/home/library.png",
+      image: "/assets/homeimg/hostel.jpg",
       alt: "Student doing art project",
     },
   ];

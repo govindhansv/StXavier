@@ -14,7 +14,7 @@ const ExtraCurricularActivities = () => {
     },
     {
       title: "Archery",
-      image: "/assets/home/library.png",
+      image: "/assets/homeimg/archery.jpg",
       alt: "Student practicing archery",
     },
     {

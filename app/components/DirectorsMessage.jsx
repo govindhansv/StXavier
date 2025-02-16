@@ -18,7 +18,7 @@ const DirectorsMessage = () => {
           {/* Image */}
           <div className="w-full lg:w-1/4 flex justify-center lg:justify-start">
             <img
-              src="/assets/home/director.png"
+              src="/assets/homeimg/director.jpg"
               alt="Fr. Tomy Kariyilakulam"
               className="h-48 lg:h-64 object-contain"
             />
