@@ -36,7 +36,7 @@ const ContactFooter = () => {
             <div className="text-center md:text-left">
               <p className="text-sm leading-relaxed text-gray-700 lg:text-[24px]">
                 St. Xavier's High School,{" "}
-                <span className="font-bold">Panchgani</span> P.O.,
+                <span className="font-bold">Panchgani</span> P.O,
                 <br />
                 Tal - Mahabaleshwar, Dist - Satara, Maharashtra, India - 412 805
               </p>
