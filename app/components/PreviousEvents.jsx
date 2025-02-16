@@ -2,7 +2,7 @@ import React from 'react';
 
 const PreviousEvents = () => {
   return (
-    <div className="px-6 lg:px-36 mx-auto">
+    <div className="px-6 lg:px-36 mx-auto pt-8">
       {/* Header */}
       <div className="mb-8">
       

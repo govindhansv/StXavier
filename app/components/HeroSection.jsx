@@ -33,7 +33,7 @@ const HeroSection = () => {
               <br className="hidden sm:block" />
               (RESIDENTIAL)
             </h2>
-            <p className="leading-[34px]  md:text-[24px] text-black font-light w-[775px]">
+            <p className="leading-[30px]  md:text-[24px] text-black font-light w-[775px]">
               St. Xavier's High School, Panchgani, is a residential educational
               institution of St. Xavier's Education Trust. Panchgani, an
               evergreen hill station is a well-known education centre. Located

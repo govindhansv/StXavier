@@ -34,13 +34,13 @@ export default function MTestimonials() {
               className="w-24 h-24 lg:w-[162px] lg:h-[162px] mb-4 lg:mb-0 lg:mr-4 border-2 border-[#FF0076] rounded-full"
             />
             <div className="text-center lg:text-left lg:pl-8">
-              <h2 className="text-xl lg:text-[24px] font-bold text-gray-800">
+              <h2 className="text-xl lg:text-[20px] font-bold text-gray-800">
                 Dr. Josephine Samson
               </h2>
-              <p className="text-lg lg:text-[24px] font-medium text-gray-800">
+              <p className="text-lg lg:text-[20px] font-medium text-gray-800">
                 M.D. Community Medicine
               </p>
-              <p className="text-lg lg:text-[24px] font-medium text-gray-800">
+              <p className="text-lg lg:text-[20px] font-medium text-gray-800">
                 Krishna Institute of Medical Sciences,
                 <br className="hidden lg:block" /> Karad
               </p>
@@ -48,7 +48,7 @@ export default function MTestimonials() {
           </div>
 
           {/* Testimonial Text - Responsive font size */}
-          <blockquote className="text-sm lg:text-[24px] leading-relaxed lg:leading-snug font-light mb-4">
+          <blockquote className="text-sm lg:text-[20px] leading-relaxed lg:leading-snug font-light mb-4">
             In 2004, I entered my residential school as a quiet, unsure student,
             overwhelmed by the transition. Initially, I struggled academically
             and hesitated in sports and extracurriculars, but the constant

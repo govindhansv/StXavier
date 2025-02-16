@@ -20,10 +20,10 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-white fixed top-0 w-full z-50 h-40">
-      <div className="mx-auto px-4 sm:px-6 lg:px-24 flex flex-col justify-center">
+    <nav className="bg-white fixed top-0 w-full z-50 h-32">
+      <div className="mx-auto px-4 sm:px-6 lg:px-24 flex flex-col justify-center pr-8">
         {/* Main navbar content */}
-        <div className="flex justify-between items-center h-20 md:h-40">
+        <div className="flex justify-between items-center h-20 md:h-32">
           {/* Logo and School Name */}
           <div className="flex items-center space-x-2 md:space-x-4 flex-1 md:w-2/5">
             <div className="w-12 h-12 md:w-full md:h-auto relative flex-shrink-0">
@@ -66,7 +66,7 @@ const Navbar = () => {
               ))}
             </div>
 
-            <div className="w-full border-t border-gray-400 my-1"></div>
+            <div className="w-full border-t border-gray-400 -my-1"></div>
 
             {/* Bottom row */}
             <div className="flex items-center py-2">

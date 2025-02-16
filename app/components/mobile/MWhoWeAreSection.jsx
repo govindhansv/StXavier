@@ -8,7 +8,7 @@ const MWhoWeAreSection = () => {
           WHO WE ARE
         </button>
       </div>
-      <div className="text-gray-800 text-base lg:text-[24px] leading-7 lg:leading-[34px] lg:w-[1100px] font-light">
+      <div className="text-gray-800 text-base lg:text-[20px] leading-7 lg:leading-[30px] lg:w-[1100px] font-light">
         <p>
           St. Xavier's High School is affiliated to ICSE and Maharashtra State
           Board. St. Xavier's Junior College is Maharashtra State Board and It

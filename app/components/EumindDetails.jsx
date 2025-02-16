@@ -20,7 +20,7 @@ export default function EumindDetails() {
       </h1>
 
       {/* Introduction Paragraph */}
-      <p className="mb-12  lg:text-[24px]  leading-snug font-light ">
+      <p className="mb-12  lg:text-[20px]  leading-snug font-light ">
         Founded by visionary schools from Belgium, the Netherlands, and
         India—our school proudly being a founding member - EUMIND is a vibrant
         platform fostering cultural and educational exchanges between European
@@ -30,14 +30,14 @@ export default function EumindDetails() {
       </p>
 
       {/* Connection Section */}
-      <h2 className="text-lg mb-8  lg:text-[24px]  leading-snug font-light ">Here's how we connect:</h2>
+      <h2 className="text-lg mb-8  lg:text-[20px]  leading-snug font-light ">Here's how we connect:</h2>
 
       {/* Two Column Grid */}
       <div className="grid md:grid-cols-2 gap-8 mb-12">
         {/* E-Journal Project */}
         <div>
           <h3 className="font-bold text-[24px]">E-Journal Project</h3>
-          <p className="  lg:text-[24px]  leading-snug font-light ">
+          <p className="  lg:text-[20px]  leading-snug font-light ">
             A digital bridge where students from across continents share ideas,
             publish articles, and engage in enriching video conferences—bringing
             minds together, one click at a time.
@@ -47,7 +47,7 @@ export default function EumindDetails() {
         {/* Physical Exchange */}
         <div>
           <h3 className="font-bold text-[24px]">Physical Exchange</h3>
-          <p className=" lg:text-[24px]  leading-snug font-light lg:w-[472px]">
+          <p className=" lg:text-[20px]  leading-snug font-light lg:w-[472px]">
             The heart of EUMIND, where friendships cross borders. Each November,
             European students experience the vibrancy of our school, while our
             students get to explore European schools in May, embracing new
@@ -57,7 +57,7 @@ export default function EumindDetails() {
       </div>
 
       {/* Footer Statement */}
-      <p className=" lg:text-[24px]  leading-snug font-light ">
+      <p className=" lg:text-[20px]  leading-snug font-light ">
         At EUMIND, every connection is a step toward a brighter, interconnected
         world.
       </p>

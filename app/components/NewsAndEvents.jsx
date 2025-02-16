@@ -3,7 +3,10 @@
 // components/NewsAndEvents.js
 export default function NewsAndEvents() {
   return (
-    <div className="px-6 lg:px-36 mx-auto py-12">
+    <div className="px-6 lg:px-36 mx-auto pb-12" 
+    style={{ background: "#F0F0F0 0% 0% no-repeat padding-box" }}
+
+    >
       {/* Section Title */}
       <div className="mb-8">
         <button className="bg-[#FF0076] text-white px-6 py-5 text-sm hover:bg-[#FF0076]/90 font-bold lg:text-[26px]">
@@ -12,9 +15,9 @@ export default function NewsAndEvents() {
       </div>
 
       {/* Announcement Card */}
-      <div className="border  p-6 px-16 py-8">
+      <div className="border  p-6 px-16 py-8 bg-white">
         <div className="flex justify-between items-start mb-4 ">
-          <h2 className="font-bold text-[#00000080] lg:text-[24px] text-lg">
+          <h2 className="font-bold text-[#00000080] lg:text-[20px] text-lg">
             ANNOUNCEMENT
           </h2>
           <button className="text-gray-600 hover:text-gray-600">
@@ -22,7 +25,7 @@ export default function NewsAndEvents() {
           </button>
         </div>
 
-        <p className=" lg:text-[24px]  leading-snug font-light ">
+        <p className=" lg:text-[20px]  leading-snug font-light ">
           St. Xavier's Junior College, Panchgani Performance in the XII exam and
           the CET thereafter has become the gateway to high quality professional
           education and success. St. Xavier's Junior College offers cutting edge

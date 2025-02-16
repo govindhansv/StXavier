@@ -10,7 +10,7 @@ const MVisionMissionSection = () => {
             Vision
           </button>
 
-          <p className="text-black text-base lg:text-[24px] max-w-full lg:w-[550px] leading-relaxed lg:leading-[29px] font-light mb-6 lg:mb-8">
+          <p className="text-black text-base lg:text-[20px] max-w-full lg:w-[550px] leading-relaxed lg:leading-[29px] font-light mb-6 lg:mb-8">
             St. Xavier's envisions an integral and holistic development of the
             child, so as to enable him/her to live a free, just and honest life,
             empowering him/her to face the world with zest and contribute to the
@@ -42,7 +42,7 @@ const MVisionMissionSection = () => {
               "Develop a balanced emotional character and personality, leading to self-awareness, motivation, self control, empathy and good social skills."
             ].map((text, index, array) => (
               <div key={index}>
-                <p className="text-black text-base lg:text-[24px] max-w-full lg:w-[479px] leading-relaxed lg:leading-[29px] font-light">
+                <p className="text-black text-base lg:text-[20px] max-w-full lg:w-[479px] leading-relaxed lg:leading-[29px] font-light">
                   {text}
                 </p>
                 {index !== array.length - 1 && (

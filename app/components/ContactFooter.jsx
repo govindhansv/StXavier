@@ -34,7 +34,7 @@ const ContactFooter = () => {
           <div className="flex-1 space-y-6">
             {/* Address */}
             <div className="text-center md:text-left">
-              <p className="text-sm leading-relaxed text-gray-700 lg:text-[24px]">
+              <p className="text-sm leading-relaxed text-gray-700 lg:text-[20px]">
                 St. Xavier's High School,{" "}
                 <span className="font-bold">Panchgani</span> P.O,
                 <br />
@@ -44,16 +44,16 @@ const ContactFooter = () => {
 
             {/* Contact Information */}
             <div className="space-y-2">
-              <p className="text-sm lg:text-[24px] font-bold text-gray-800 text-center md:text-left">
+              <p className="text-sm lg:text-[20px] font-bold text-gray-800 text-center md:text-left">
                 +91 9975064585 <span className="text-[#FF0076]">|</span> +91
                 8390850053 <span className="text-[#FF0076]">|</span> +91
                 7066090694
               </p>
-              <p className="text-sm text-gray-700 text-center md:text-left pt-4">
-                <span className="lg:text-[24px] pr-4">Email: </span>
+              <p className="text-sm text-gray-700 text-center md:text-left">
+                <span className="lg:text-[20px]">Email : </span>
                 <a
                   href="mailto:xavierspanchgani@gmail.com"
-                  className="underline lg:text-[24px] hover:text-[#FF0076]/90 transition-colors"
+                  className=" lg:text-[20px] hover:text-[#FF0076]/90 transition-colors"
                 >
                   xavierspanchgani@gmail.com
                 </a>

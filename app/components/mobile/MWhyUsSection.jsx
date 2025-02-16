@@ -9,7 +9,7 @@ const MWhyUsSection = () => {
         </button>
       </div>
 
-      <div className="text-gray-800 text-base lg:text-[24px] w-full lg:w-[1081px] leading-relaxed lg:leading-[34px] font-light py-4 lg:py-8">
+      <div className="text-gray-800 text-base lg:text-[20px] w-full lg:w-[1081px] leading-relaxed lg:leading-[30px] font-light py-4 lg:py-8">
         <p>
           St. Xavier's provides holistic education with qualified, multilingual
           staff, balanced meals, and a nurturing environment at Alphonsa Hostel.

@@ -13,7 +13,7 @@ export default function Testimonials() {
         </button>
       </div>
 
-      <div className="shadow-xl p-8 bg-white mt-16">
+      <div className=" border p-8 bg-white mt-16">
         <div className="lg:px-36 mx-auto p-6 bg-white   relative">
           {/* Star Rating - Moved to top right */}
           <div className="absolute top-12 right-12">
@@ -23,7 +23,9 @@ export default function Testimonials() {
               ))}
             </div>
             <div className="hidden lg:block absolute right-0 -top-4">
-              <span className="quote text-[#FF0076] text-[160px] font-serif ">"</span>
+              <span className="quote text-[#FF0076] text-[160px] font-serif ">
+                "
+              </span>
             </div>
           </div>
 
@@ -35,7 +37,7 @@ export default function Testimonials() {
               className="w-[162px] h-[162px]  mr-4 border-2 border-pink-[#FF0076] rounded-full"
             />
             <div className="pl-8">
-              <h2 className="text-[24px] font-bold text-gray-800">
+              <h2 className="text-[20px] font-bold text-gray-800">
                 Dr. Josephine Samson
               </h2>
               <p className="text-[24px] font-medium text-gray-800">
@@ -48,7 +50,7 @@ export default function Testimonials() {
           </div>
 
           {/* Testimonial Text */}
-          <blockquote className="  text-base lg:text-[24px] leading-snug font-light  mb-4">
+          <blockquote className="  text-base lg:text-[16px] leading-snug font-light  mb-4">
             In 2004, I entered my residential school as a quiet, unsure student,
             overwhelmed by the transition. Initially, I struggled academically
             and hesitated in sports and extracurriculars, but the constant
@@ -63,10 +65,10 @@ export default function Testimonials() {
 
           {/* Navigation Arrows */}
           <div className="absolute inset-y-0 left-10 flex items-center">
-            <button className="bg-gray-200/50 p-2  text-3xl">←</button>
+            <button className=" p-2  text-3xl">←</button>
           </div>
           <div className="absolute inset-y-0 right-10 flex items-center">
-            <button className="bg-gray-200/50 p-2 text-3xl ">→</button>
+            <button className="p-2 text-3xl ">→</button>
           </div>
         </div>
       </div>

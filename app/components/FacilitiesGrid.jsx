@@ -61,7 +61,7 @@ const FacilitiesGrid = () => {
                 className="w-full h-full lg:h-[310px] lg:w-[303px] object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
-            <h3 className="mt-4 text-xl text-[#00000080] font-bold lg:text-[26px] text-start">
+            <h3 className="mt-4 text-xl text-[#00000080] font-bold lg:text-[22px] text-start">
               {facility.title}
             </h3>
           </div>

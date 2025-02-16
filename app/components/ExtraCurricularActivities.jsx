@@ -79,7 +79,7 @@ const ExtraCurricularActivities = () => {
 
         {/* Description */}
         <div className="mb-12">
-          <p className="lg:text-[24px] font-light leading-[34px]">
+          <p className="lg:text-[20px] font-light leading-[30px]">
             Sports and Physical Education play a major role in students' lives
             at St. Xavier's. We provide a professional touch that accentuates
             the value of extracurricular activities, and each student's
@@ -100,7 +100,7 @@ const ExtraCurricularActivities = () => {
                   loading="lazy" // Add lazy loading for better performance
                 />
               </div>
-              <h3 className="mt-4 text-xl text-[#00000080] font-bold lg:text-[26px] text-start">
+              <h3 className="mt-4 text-xl text-[#00000080] font-bold lg:text-[22px] text-start">
                 {activity.title}
               </h3>
             </div>

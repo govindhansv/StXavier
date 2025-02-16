@@ -35,7 +35,7 @@ const MContactFooter = () => {
           <div className="flex-1 space-y-6">
             {/* Address */}
             <div className="text-center md:text-left">
-              <p className="text-base md:text-sm leading-relaxed text-gray-700 lg:text-[24px]">
+              <p className="text-base md:text-sm leading-relaxed text-gray-700 lg:text-[20px]">
                 St. Xavier's High School,{" "}
                 <span className="font-bold">Panchgani</span> P.O.,
                 <br className="hidden md:block" />{" "}
@@ -49,7 +49,7 @@ const MContactFooter = () => {
 
             {/* Contact Information */}
             <div className="space-y-2">
-              <p className="text-base md:text-sm lg:text-[24px] font-bold text-gray-800 text-center md:text-left">
+              <p className="text-base md:text-sm lg:text-[20px] font-bold text-gray-800 text-center md:text-left">
                 <span className="block md:inline mb-2 md:mb-0">
                   +91 9975064585
                 </span>{" "}
@@ -61,12 +61,12 @@ const MContactFooter = () => {
                 <span className="block md:inline">+91 7066090694</span>
               </p>
               <p className="text-base md:text-sm text-gray-700 text-center md:text-left pt-4">
-                <span className="block md:inline lg:text-[24px] md:pr-4">
+                <span className="block md:inline lg:text-[20px] md:pr-4">
                   Email:{" "}
                 </span>
                 
                  <a href="mailto:xavierspanchgani@gmail.com"
-                  className="underline lg:text-[24px] hover:text-[#FF0076]/90 transition-colors break-all md:break-normal"
+                  className="underline lg:text-[20px] hover:text-[#FF0076]/90 transition-colors break-all md:break-normal"
                 >
                   xavierspanchgani@gmail.com
                 </a>

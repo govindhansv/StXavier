@@ -9,11 +9,11 @@ export default function AdmissionPage() {
       <div>
         {/* Header */}
         <div className="sticky top-0 z-10 bg-white  lg:py-6">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-36">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-28">
             <div className="flex justify-between items-center h-16 lg:h-20">
               <Link href="/">
                 <button className="flex items-center text-gray-600 hover:text-gray-900 transition-colors">
-                  <ArrowLeft className="w-4 h-4 lg:w-5 lg:h-5 text-pink-600 mr-2" />
+                  <ArrowLeft className="w-8 h-8 lg:w-8 lg:h-8 text-pink-600 mr-2" />
                   <span className="text-sm lg:text-base font-medium">BACK</span>
                 </button>
               </Link>
@@ -30,7 +30,7 @@ export default function AdmissionPage() {
             <h2 className="text-xl lg:text-2xl font-bold mb-3 lg:mb-4">
               ADMISSIONS
             </h2>
-            <p className="text-base lg:text-[24px] leading-relaxed lg:leading-snug font-light">
+            <p className="text-base lg:text-[20px] leading-relaxed lg:leading-snug font-light">
               Admission is open to all irrespective of caste, creed, language
               and nationality. Application should be made on the prescribed
               forms available from the office. No application will be considered
@@ -45,7 +45,7 @@ export default function AdmissionPage() {
             <h2 className="text-xl lg:text-2xl font-bold mb-3 lg:mb-4">
               ADMISSIONS TO DAY STUDENTS
             </h2>
-            <p className="text-base lg:text-[24px] leading-relaxed lg:leading-snug font-light">
+            <p className="text-base lg:text-[20px] leading-relaxed lg:leading-snug font-light">
               Even though St. Xavier's is a recognised Boarding school, the
               management permits the admission of a limited number of students
               as Day Boarders, in order to open the world class facilities also
