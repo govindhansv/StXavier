@@ -35,7 +35,7 @@ export default function Home() {
   return (
     <>
       <div className="relative bg-white pt-20 lg:pt-24 hidden lg:block ">
-      <Navbar />
+        <Navbar />
         <Banner />
         <HeroSection />
         <StatsDashboard />

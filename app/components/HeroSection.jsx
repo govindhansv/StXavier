@@ -1,14 +1,6 @@
 import React from "react";
-import Image from "next/image";
 
 const HeroSection = () => {
-  const stats = [
-    { value: "12K+", label: "Students" },
-    { value: "150+", label: "Faculty" },
-    { value: "4", label: "Programs", icon: "💡" },
-    { value: "5", label: "Sports", icon: "🏃" },
-  ];
-
   return (
     <div className="px-4 sm:px-6 lg:px-36 relative bg-white">
       {/* Pink About Us Button */}
