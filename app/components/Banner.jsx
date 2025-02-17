@@ -1,13 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import { useEffect, useCallback } from "react";
+import useEmblaCarousel from "embla-carousel-react";
 
 const bannerImages = [
   "/assets/home/homebanner.png",
@@ -25,26 +20,43 @@ const bannerImages = [
 ];
 
 function Banner() {
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    loop: true,
+    align: "start",
+    dragFree: false,
+    containScroll: "trimSnaps",
+  });
+
+  const autoplay = useCallback(() => {
+    if (emblaApi) {
+      emblaApi.scrollNext();
+    }
+  }, [emblaApi]);
+
+  useEffect(() => {
+    const interval = setInterval(autoplay, 3000);
+    return () => clearInterval(interval);
+  }, [autoplay]);
+
   return (
-    <section className="relative w-full h-[500px]">
-      <Carousel className="w-full h-full">
-        <CarouselContent>
+    <section className="relative w-full max-w-full h-[500px] overflow-hidden">
+      <div className="overflow-hidden w-full h-full" ref={emblaRef}>
+        <div className="flex h-full touch-pan-y">
           {bannerImages.map((src, index) => (
-            <CarouselItem key={index} className="w-full h-[500px] relative">
+            <div key={index} className="flex-[0_0_100%] relative h-full">
               <Image
                 src={src}
                 alt={`Banner ${index + 1}`}
-                layout="fill"
-                objectFit="cover"
-                objectPosition="top"
-                className="rounded-lg"
+                fill
+                priority={index === 0}
+                className="rounded-lg object-cover object-top"
+                sizes="100vw"
+                quality={90}
               />
-            </CarouselItem>
+            </div>
           ))}
-        </CarouselContent>
-        <CarouselPrevious className="absolute left-4 top-1/2 transform -translate-y-1/2" />
-        <CarouselNext className="absolute right-4 top-1/2 transform -translate-y-1/2" />
-      </Carousel>
+        </div>
+      </div>
     </section>
   );
 }

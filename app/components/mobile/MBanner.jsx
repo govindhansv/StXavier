@@ -1,13 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import { useEffect, useCallback } from "react";
+import useEmblaCarousel from "embla-carousel-react";
 
 const mBannerImages = [
   "/assets/home/homebanner.png",
@@ -25,14 +20,30 @@ const mBannerImages = [
 ];
 
 function MBanner() {
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    loop: true,
+    align: "start",
+  });
+
+  const autoplay = useCallback(() => {
+    if (emblaApi) {
+      emblaApi.scrollNext();
+    }
+  }, [emblaApi]);
+
+  useEffect(() => {
+    const interval = setInterval(autoplay, 3000); // Changes slide every 3 seconds
+    return () => clearInterval(interval);
+  }, [autoplay]);
+
   return (
     <section className="relative w-full min-h-[50vh] sm:min-h-[70vh] lg:h-screen">
-      <Carousel className="w-full h-full">
-        <CarouselContent>
+      <div className="w-full h-full" ref={emblaRef}>
+        <div className="flex h-full">
           {mBannerImages.map((src, index) => (
-            <CarouselItem
+            <div
               key={index}
-              className="w-full min-h-[50vh] sm:min-h-[70vh] lg:h-screen relative"
+              className="flex-[0_0_100%] min-w-0 relative min-h-[50vh] sm:min-h-[70vh] lg:h-screen"
             >
               <Image
                 src={src}
@@ -42,12 +53,22 @@ function MBanner() {
                 objectPosition="center"
                 className="rounded-lg"
               />
-            </CarouselItem>
+            </div>
           ))}
-        </CarouselContent>
-        <CarouselPrevious className="absolute left-4 top-1/2 transform -translate-y-1/2" />
-        <CarouselNext className="absolute right-4 top-1/2 transform -translate-y-1/2" />
-      </Carousel>
+        </div>
+        {/* <button
+          onClick={() => emblaApi?.scrollPrev()}
+          className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full p-2 shadow-lg z-10"
+        >
+          ←
+        </button>
+        <button
+          onClick={() => emblaApi?.scrollNext()}
+          className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full p-2 shadow-lg z-10"
+        >
+          →
+        </button> */}
+      </div>
     </section>
   );
 }

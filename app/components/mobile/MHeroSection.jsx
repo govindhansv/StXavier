@@ -1,4 +1,7 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useCallback } from "react";
+import useEmblaCarousel from "embla-carousel-react";
 
 const MHeroSection = () => {
   const stats = [
@@ -7,6 +10,26 @@ const MHeroSection = () => {
     { value: "4", label: "Programs", icon: "💡" },
     { value: "5", label: "Sports", icon: "🏃" },
   ];
+
+  const images = [
+    "/assets/images/carousel/asian-doctor-female-isolated-white-background.jpg",
+    "/assets/images/carousel/cheerful-little-skateboarder-posing-with-thumbs-up.jpg",
+    "/assets/images/carousel/little-doctor.jpg",
+    "/assets/images/carousel/man-office-clothes-playing-basketball-white-space-unusual-look-businessman-motion-action-sport-healthy-lifestyle.jpg",
+  ];
+
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+
+  const autoplay = useCallback(() => {
+    if (emblaApi) {
+      emblaApi.scrollNext();
+    }
+  }, [emblaApi]);
+
+  useEffect(() => {
+    const interval = setInterval(autoplay, 3000); // Changes slide every 3 seconds
+    return () => clearInterval(interval);
+  }, [autoplay]);
 
   return (
     <div className="px-4 sm:px-6 lg:px-36 relative bg-white">
@@ -43,13 +66,21 @@ const MHeroSection = () => {
             </p>
           </div>
 
-          {/* Right Image */}
+          {/* Right Image Carousel */}
           <div className="relative h-[300px] sm:h-[400px] lg:h-[600px] mt-8 lg:mt-0 w-full lg:w-1/3">
-            <img
-              src="/assets/home/welcome.png"
-              alt="Student on skateboard"
-              className="object-contain w-full h-full"
-            />
+            <div ref={emblaRef} className="w-full h-full overflow-hidden">
+              <div className="flex h-full">
+                {images.map((src, index) => (
+                  <div key={index} className="flex-[0_0_100%] min-w-0 relative">
+                    <img
+                      src={src}
+                      alt={`Slide ${index + 1}`}
+                      className="object-contain w-full h-full"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
