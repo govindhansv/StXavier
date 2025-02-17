@@ -37,46 +37,88 @@ export default function Home() {
       <div className="relative bg-white pt-20 lg:pt-24 hidden lg:block ">
         <Navbar />
         <Banner />
-        <HeroSection />
-        <StatsDashboard />
-        <WhoWeAreSection />
-        <VisionMissionSection />
-        <WhyUsSection />
-        <DirectorsMessage />
-        <FacilitiesSection />
-        <FacilitiesGrid />
+        <section id="about">
+          <HeroSection />
+        </section>
+        <section id="stats">
+          <StatsDashboard />
+        </section>
+        <section id="who-we-are">
+          <WhoWeAreSection />
+        </section>
+        <section id="vision-mission">
+          <VisionMissionSection />
+        </section>
+        <section id="why-us">
+          <WhyUsSection />
+        </section>
+        <section id="directors-message">
+          <DirectorsMessage />
+        </section>
+        <section id="facilities">
+          <FacilitiesSection />
+          <FacilitiesGrid />
+        </section>
         <ExtraCurricularActivities />
-        <Eumind />
-        <EumindDetails />
-        {/* <TeachersSection /> */}
-        <NewsAndEvents />
-        <UpcomingEvents />
-        <PreviousEvents />
+        <section id="eumind">
+          <Eumind />
+          <EumindDetails />
+        </section>
+        <section id="news">
+          <NewsAndEvents />
+          <UpcomingEvents />
+          <PreviousEvents />
+        </section>
         <ImageGallery />
-        <Testimonials />
-        <ContactFooter />
+        <section id="testimonials">
+          <Testimonials />
+        </section>
+        <section id="contact">
+          <ContactFooter />
+        </section>
       </div>
       <div className="relative bg-white pt-20 lg:pt-24 block lg:hidden">
         <MNavbar />
-        <MBanner />
-        <MHeroSection />
-        <MStatsDashboard />
-        <MWhoWeAreSection />
-        <MVisionMissionSection />
-        <MWhyUsSection />
-        <MDirectorsMessage />
-        <MFacilitiesSection />
-        <FacilitiesGrid />
+        <Banner />
+        <section id="about">
+          <MHeroSection />
+        </section>
+        <section id="stats">
+          <MStatsDashboard />
+        </section>
+        <section id="who-we-are">
+          <MWhoWeAreSection />
+        </section>
+        <section id="vision-mission">
+          <MVisionMissionSection />
+        </section>
+        <section id="why-us">
+          <MWhyUsSection />
+        </section>
+        <section id="directors-message">
+          <MDirectorsMessage />
+        </section>
+        <section id="facilities">
+          <MFacilitiesSection />
+          <FacilitiesGrid />
+        </section>
         <ExtraCurricularActivities />
-        <Eumind />
-        <EumindDetails />
-        {/* <MTeachersSection /> */}
-        <NewsAndEvents />
-        <UpcomingEvents />
-        <PreviousEvents />
+        <section id="eumind">
+          <Eumind />
+          <EumindDetails />
+        </section>
+        <section id="news">
+          <NewsAndEvents />
+          <UpcomingEvents />
+          <PreviousEvents />
+        </section>
         <ImageGallery />
-        <MTestimonials />
-        <MContactFooter />
+        <section id="testimonials">
+          <MTestimonials />
+        </section>
+        <section id="contact">
+          <MContactFooter />
+        </section>
       </div>
     </>
   );

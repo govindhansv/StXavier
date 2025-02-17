@@ -3,21 +3,35 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from 'next/navigation';
 
 const MNavbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const router = useRouter();
 
   const navItems = [
-    { label: "About Us", href: "/about" },
-    { label: "Why Us", href: "/why-us" },
-    { label: "Facilities", href: "/facilities" },
-    { label: "EUMIND", href: "/eumind" },
+    { label: "About Us", href: "#about" },
+    { label: "Why Us", href: "#why-us" },
+    { label: "Facilities", href: "#facilities" },
+    { label: "EUMIND", href: "#eumind" },
     { label: "Admissions", href: "/admissions" },
     { label: "Our Teachers", href: "/ourteachers" },
-    { label: "News & Events", href: "/news" },
+    { label: "News & Events", href: "#news" },
     { label: "Downloads", href: "/downloads" },
-    { label: "Contact Us", href: "/contact" },
+    { label: "Contact Us", href: "#contact" },
   ];
+
+  const scrollToSection = (id) => {
+    if (id === 'downloads') {
+      router.push('/downloads');
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+      setIsMenuOpen(false);
+    }
+  };
 
   return (
     <nav className="bg-white fixed top-0 w-full z-50 h-20 md:h-40">
@@ -25,18 +39,19 @@ const MNavbar = () => {
         {/* Main navbar content */}
         <div className="flex justify-between items-center h-20 md:h-40">
           {/* Logo and School Name */}
-          <div className="flex items-center space-x-2 md:space-x-4 flex-1">
-  <div className=" md:w-full md:h-auto relative flex-shrink-0"> {/* Increased width and height for mobile */}
-    <Image
-      src="/assets/logo/logo.png"
-      alt="St. Xavier's Logo"
-      className="object-contain"
-      width={150} // Increased from 80 to 150 for mobile
-      height={150} // Increased from 80 to 150 for mobile
-      sizes="(max-width: 768px) 150px, 500px"
-    />
-  </div>
-</div>
+          <div className="flex items-center space-x-2 md:space-4 flex-1">
+            <div className=" md:w-full md:h-auto relative flex-shrink-0">
+              {/* Increased width and height for mobile */}
+              <Image
+                src="/assets/logo/logo.png"
+                alt="St. Xavier's Logo"
+                className="object-contain"
+                width={150} // Increased from 80 to 150 for mobile
+                height={150} // Increased from 80 to 150 for mobile
+                sizes="(max-width: 768px) 150px, 500px"
+              />
+            </div>
+          </div>
           <div className="w-16"></div>
 
           {/* Desktop Navigation */}
@@ -116,17 +131,16 @@ const MNavbar = () => {
         >
           <div className="py-2 space-y-1 border-t border-gray-200">
             {navItems.map((item) => (
-              <Link
+              <button
                 key={item.label}
-                href={item.href}
+                onClick={() => scrollToSection(item.href.slice(1))}
                 className="block px-6 py-3 text-base font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900 border-b border-gray-100"
-                onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}
-              </Link>
+              </button>
             ))}
             <div className="px-6 py-4">
-              <Link href="/admissions" onClick={() => setIsMenuOpen(false)}>
+              <Link href="/admissions">
                 <button className="w-full bg-[#FF0076] text-white px-6 py-3 text-base font-medium hover:bg-[#FF0076]/90">
                   Admission
                 </button>

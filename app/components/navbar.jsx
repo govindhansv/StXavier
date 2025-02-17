@@ -1,23 +1,37 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from 'next/navigation';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const router = useRouter();
 
   const navItems = [
-    { label: "About Us", href: "/about" },
-    { label: "Why Us", href: "/why-us" },
-    { label: "Facilities", href: "/facilities" },
-    { label: "EUMIND", href: "/eumind" },
+    { label: "About Us", href: "#about" },
+    { label: "Why Us", href: "#why-us" },
+    { label: "Facilities", href: "#facilities" },
+    { label: "EUMIND", href: "#eumind" },
     { label: "Admissions", href: "/admissions" },
     { label: "Our Teachers", href: "/ourteachers" },
-    { label: "News & Events", href: "/news" },
+    { label: "News & Events", href: "#news" },
     { label: "Downloads", href: "/downloads" },
-    { label: "Contact Us", href: "/contact" },
+    { label: "Contact Us", href: "#contact" },
   ];
+
+  const scrollToSection = (id) => {
+    if (id === 'downloads') {
+      router.push('/downloads');
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+      setIsMenuOpen(false);
+    }
+  };
 
   return (
     <nav className="bg-white fixed top-0 w-full z-50">
@@ -25,7 +39,7 @@ const Navbar = () => {
         {/* Main navbar content */}
         <div className="flex justify-between items-center h-20 md:h-32">
           {/* Logo and School Name */}
-          <div className="flex items-center space-x-2 md:space-x-4 flex-1 md:w-2/5">
+          <div className="flex items-center space-x-2 md:space-4 flex-1 md:w-2/5">
             <div className="w-12 h-12 md:w-full md:h-auto relative flex-shrink-0 pr-12">
               <Image
                 src="/assets/logo/logo.png"
@@ -35,17 +49,6 @@ const Navbar = () => {
                 height={500}
               />
             </div>
-            {/* <div>
-              <h1 className="text-gray-600 font-bold text-sm md:text-lg lg:text-2xl">
-                ST. XAVIER'S
-              </h1>
-              <p className="text-gray-600 font-bold text-xs lg:text-sm hidden md:block">
-                HIGH SCHOOL & JUNIOR COLLEGE
-              </p>
-              <p className="font-bold text-xs lg:text-sm hidden md:block">
-                PANCHGANI
-              </p>
-            </div> */}
           </div>
           <div className="w-16"></div>
 
@@ -55,14 +58,14 @@ const Navbar = () => {
             <div className="flex items-start justify-start py-2 ">
               {navItems.slice(0, 4).map((item, index) => (
                 <React.Fragment key={item.label}>
-                  <Link
-                    href={item.href}
+                  <button
+                    onClick={() => scrollToSection(item.href.slice(1))}
                     className={`text-gray-500 hover:text-gray-900 text-[20px] font-medium ${
                       index == 0 ? `pr-3` : `pl-3`
                     } ${index == 3 ? `pl-3` : `pr-3`} `}
                   >
                     {item.label}
-                  </Link>
+                  </button>
                   {index < 3 && <span className="text-[#707070]">|</span>}
                 </React.Fragment>
               ))}
@@ -74,14 +77,14 @@ const Navbar = () => {
             <div className="flex items-center py-2">
               {navItems.slice(6, 9).map((item, index) => (
                 <React.Fragment key={item.label}>
-                  <Link
-                    href={item.href}
+                  <button
+                    onClick={() => scrollToSection(item.href.slice(1))}
                     className={`text-gray-500 hover:text-gray-900 text-[20px] font-medium ${
                       index == 0 ? `pr-3` : `pl-3`
                     } ${index == 2 ? `pl-3` : `pr-3`} `}
                   >
                     {item.label}
-                  </Link>
+                  </button>
                   {index < 2 && <span className="text-gray-400">|</span>}
                 </React.Fragment>
               ))}
@@ -130,19 +133,20 @@ const Navbar = () => {
         >
           <div className="py-2 space-y-1 border-t border-gray-200">
             {navItems.map((item) => (
-              <Link
+              <button
                 key={item.label}
-                href={item.href}
+                onClick={() => scrollToSection(item.href.slice(1))}
                 className="block px-4 py-2 text-base font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900"
-                onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}
-              </Link>
+              </button>
             ))}
             <div className="px-4 py-3">
-              <button className="w-full bg-[#FF0076] text-white px-6 py-2 rounded text-sm font-medium hover:bg-[#FF0076]/90">
-                Admission
-              </button>
+              <Link href="/admissions">
+                <button className="w-full bg-[#FF0076] text-white px-6 py-2 rounded text-sm font-medium hover:bg-[#FF0076]/90">
+                  Admission
+                </button>
+              </Link>
             </div>
           </div>
         </div>

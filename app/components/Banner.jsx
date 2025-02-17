@@ -13,9 +13,9 @@ const bannerImages = [
   "/assets/images/Hero image/5.JPG",
   "/assets/images/Hero image/6.JPG",
   "/assets/images/Hero image/7.JPG",
-  "/assets/images/Hero image/8.JPG",
+  "/assets/images/Hero image/8.jpeg",
   "/assets/images/Hero image/9.JPG",
-  "/assets/images/Hero image/10.JPG",
+  "/assets/images/Hero image/10.jpeg",
   "/assets/images/Hero image/11.JPG",
 ];
 
@@ -49,7 +49,7 @@ function Banner() {
                 alt={`Banner ${index + 1}`}
                 fill
                 priority={index === 0}
-                className="rounded-lg object-cover object-top"
+                className=" object-cover object-top"
                 sizes="100vw"
                 quality={90}
               />
