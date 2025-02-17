@@ -10,12 +10,12 @@ export default function ApplicationForm() {
     <div className="min-h-screen bg-gray-50">
       <div className="mx-auto">
         <div className="sticky top-0 z-10 bg-white  lg:py-6">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-36">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-28">
             <div className="flex flex-col sm:flex-row sm:items-center py-4 sm:h-16 gap-4 sm:gap-0">
               <Link href="/admissions">
                 <button className="flex items-center text-gray-600 hover:text-gray-900 transition-colors">
-                  <ArrowLeft className="w-5 h-5 text-pink-600 mr-2" />
-                  <span className="font-medium">BACK</span>
+                  <ArrowLeft className="w-6 h-6 lg:w-7 lg:h-7 text-pink-600 mr-2" />
+                  <span className="text-base lg:text-xl font-bold">BACK</span>
                 </button>
               </Link>
               <h1 className="text-xl md:text-2xl font-bold text-blue-600 sm:ml-auto">

@@ -15,13 +15,13 @@ const DownloadsPage = () => {
   return (
     <div className="min-h-screen bg-gray-50 ">
       {/* Header */}
-      <div className="sticky top-0 z-10 bg-white  lg:px-36">
+      <div className="sticky top-0 z-10 bg-white  lg:px-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:py-6">
           <div className="flex justify-between items-center h-16">
             <Link href="/">
               <button className="flex items-center text-gray-600 hover:text-gray-900 transition-colors">
-                <ArrowLeft className="w-5 h-5 text-pink-600 mr-2" />
-                <span className="font-medium">BACK</span>
+                <ArrowLeft className="w-6 h-6 lg:w-7 lg:h-7 text-pink-600 mr-2" />
+                <span className="text-base lg:text-xl font-bold">BACK</span>
               </button>
             </Link>
 
@@ -33,12 +33,12 @@ const DownloadsPage = () => {
       </div>
 
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-36 py-8 ">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-28 py-8 ">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {downloads.map((item, index) => (
             <Card
               key={index}
-              className="group hover: transition-shadow duration-200"
+              className="group hover: transition-shadow duration-200 max-w-sm"
             >
               <button className="w-full p-4 flex items-center space-x-4 hover:bg-gray-50  transition-colors">
                 <div className="flex-shrink-0 w-12 h-12  bg-pink-100 flex items-center justify-center group-hover:bg-pink-200 transition-colors">

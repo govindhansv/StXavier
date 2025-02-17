@@ -68,12 +68,12 @@ const AdmissionForm = () => {
         <div className="mx-auto">
           {/* Header */}
           <div className="sticky top-0 z-10 bg-white  lg:py-6">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-36">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-28">
               <div className="flex flex-col sm:flex-row sm:items-center py-4 sm:h-16 gap-4 sm:gap-0">
                 <Link href="/admissions">
                   <button className="flex items-center text-gray-600 hover:text-gray-900 transition-colors">
-                    <ArrowLeft className="w-5 h-5 text-pink-600 mr-2" />
-                    <span className="font-medium">BACK</span>
+                    <ArrowLeft className="w-6 h-6 lg:w-7 lg:h-7 text-pink-600 mr-2" />
+                    <span className="text-base lg:text-xl font-bold">BACK</span>
                   </button>
                 </Link>
 
@@ -89,7 +89,6 @@ const AdmissionForm = () => {
             method="post"
             onSubmit={handleSubmit}
             encType="multipart/form-data"
-            
             className="bg-gray-100 space-y-6 p-4 sm:p-8 lg:px-36"
           >
             <div className="flex flex-col sm:flex-row sm:items-center gap-2">
@@ -260,24 +259,19 @@ const AdmissionForm = () => {
               >
                 Submit
               </button>
-           
             </div>
             {response.message && (
-            <div
-              className={`mt-4 p-4 rounded ${
-                response.type === "success"
-                  ? "bg-blue-800 text-white"
-                  : "bg-red-100 text-red-800"
-              }`}
-            >
-              {response.message}
-            </div>
-          )}
-        
+              <div
+                className={`mt-4 p-4 rounded ${
+                  response.type === "success"
+                    ? "bg-blue-800 text-white"
+                    : "bg-red-100 text-red-800"
+                }`}
+              >
+                {response.message}
+              </div>
+            )}
           </form>
-
-        
-
         </div>
       </div>
       <ContactFooter />

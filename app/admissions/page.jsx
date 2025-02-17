@@ -1,7 +1,7 @@
 import React from "react";
 import ContactFooter from "../components/ContactFooter";
 import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Download } from "lucide-react";
 
 export default function AdmissionPage() {
   return (
@@ -13,8 +13,8 @@ export default function AdmissionPage() {
             <div className="flex justify-between items-center h-16 lg:h-20">
               <Link href="/">
                 <button className="flex items-center text-gray-600 hover:text-gray-900 transition-colors">
-                  <ArrowLeft className="w-8 h-8 lg:w-8 lg:h-8 text-pink-600 mr-2" />
-                  <span className="text-sm lg:text-base font-medium">BACK</span>
+                  <ArrowLeft className="w-6 h-6 lg:w-7 lg:h-7 text-pink-600 mr-2" />
+                  <span className="text-base lg:text-xl font-bold">BACK</span>
                 </button>
               </Link>
 
@@ -59,22 +59,23 @@ export default function AdmissionPage() {
           </div>
         </div>
 
-        <div className="px-4 sm:px-6 lg:px-36 py-6 lg:py-12 grid grid-cols-1 sm:grid-cols-2 gap-4 bg-gray-100">
+        <div className="px-4 sm:px-6 lg:px-36 py-6 lg:py-12 flex flex-wrap gap-4 bg-gray-100">
           <Link
-            className="bg-[#FF0076] text-white py-3 px-4  text-center font-bold text-sm lg:text-base"
+            className="bg-[#FF0076] text-white py-3 px-6 text-center font-bold text-sm lg:text-base w-fit"
             href="/admission-form"
           >
             ADMISSION ENQUIRY
           </Link>
           <Link
-            href={"/admissions"}
-            className="bg-[#FF0076] text-white py-3 px-4  text-center font-bold text-sm lg:text-base"
+            href="/admissions"
+            className="bg-[#FF0076] text-white py-3 px-6 text-center font-bold text-sm lg:text-base w-fit flex"
           >
             OFFLINE ADMISSION FORM
+            <Download className="w-6 h-6 pl-2 " />
           </Link>
           <Link
-            href={"/application-form"}
-            className="bg-[#FF0076] text-white py-3 px-4  text-center font-bold text-sm lg:text-base w-full sm:col-span-2"
+            href="/application-form"
+            className="bg-[#FF0076] text-white py-3 px-6 text-center font-bold text-sm lg:text-base w-fit"
           >
             ONLINE ADMISSION FORM
           </Link>
@@ -86,7 +87,7 @@ export default function AdmissionPage() {
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
             <div className="lg:border-r lg:border-gray-300 space-y-4">
-              <div className="pb-4">
+              <div className="pb-4 pr-4">
                 All students have to abide by all the rules and regulations of
                 the school failing in which they will be dismissed without
                 notice.
