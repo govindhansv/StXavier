@@ -5,7 +5,7 @@ import { useEffect, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 
 const bannerImages = [
-  "/assets/home/homebanner.png",
+  "/assets/images/Hero image/0.JPG",
   "/assets/images/Hero image/1.JPG",
   "/assets/images/Hero image/2.JPG",
   "/assets/images/Hero image/3.JPG",
