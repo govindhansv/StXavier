@@ -43,13 +43,13 @@ function Banner() {
       <div className="overflow-hidden w-full h-full" ref={emblaRef}>
         <div className="flex h-full touch-pan-y">
           {bannerImages.map((src, index) => (
-            <div key={index} className="flex-[0_0_100%] relative h-full">
+            <div key={index} className="flex-[0_0_100%] h-[80vh] relative">
               <Image
                 src={src}
                 alt={`Banner ${index + 1}`}
                 fill
                 priority={index === 0}
-                className=" object-cover object-top"
+                className=" object-cover  object-center"
                 sizes="100vw"
                 quality={90}
               />
