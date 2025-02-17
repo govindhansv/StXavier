@@ -3,27 +3,27 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from 'next/navigation';
+import { useRouter } from "next/navigation";
 
 const MNavbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const router = useRouter();
 
   const navItems = [
-    { label: "About Us", href: "#about" },
-    { label: "Why Us", href: "#why-us" },
-    { label: "Facilities", href: "#facilities" },
-    { label: "EUMIND", href: "#eumind" },
-    { label: "Admissions", href: "/admissions" },
-    { label: "Our Teachers", href: "/ourteachers" },
-    { label: "News & Events", href: "#news" },
+    { label: "About Us", href: "#mobile-about" },
+    { label: "Why Us", href: "#mobile-why-us" },
+    { label: "Facilities", href: "#mobile-facilities" },
+    { label: "EUMIND", href: "#mobile-eumind" },
+    // { label: "Admissions", href: "/admissions" },
+    // { label: "Our Teachers", href: "/ourteachers" },
+    { label: "News & Events", href: "#mobile-news" },
     { label: "Downloads", href: "/downloads" },
-    { label: "Contact Us", href: "#contact" },
+    { label: "Contact Us", href: "#mobile-contact" },
   ];
 
   const scrollToSection = (id) => {
-    if (id === 'downloads') {
-      router.push('/downloads');
+    if (id === "downloads") {
+      router.push("/downloads");
     } else {
       const element = document.getElementById(id);
       if (element) {

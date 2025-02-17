@@ -80,43 +80,43 @@ export default function Home() {
       <div className="relative bg-white pt-20 lg:pt-24 block lg:hidden">
         <MNavbar />
         <Banner />
-        <section id="about">
+        <section id="mobile-about">
           <MHeroSection />
         </section>
-        <section id="stats">
+        <section id="mobile-stats">
           <MStatsDashboard />
         </section>
-        <section id="who-we-are">
+        <section id="mobile-who-we-are">
           <MWhoWeAreSection />
         </section>
-        <section id="vision-mission">
+        <section id="mobile-vision-mission">
           <MVisionMissionSection />
         </section>
-        <section id="why-us">
+        <section id="mobile-why-us">
           <MWhyUsSection />
         </section>
-        <section id="directors-message">
+        <section id="mobile-directors-message">
           <MDirectorsMessage />
         </section>
-        <section id="facilities">
+        <section id="mobile-facilities">
           <MFacilitiesSection />
           <FacilitiesGrid />
         </section>
         <ExtraCurricularActivities />
-        <section id="eumind">
+        <section id="mobile-eumind">
           <Eumind />
           <EumindDetails />
         </section>
-        <section id="news">
+        <section id="mobile-news">
           <NewsAndEvents />
           <UpcomingEvents />
           <PreviousEvents />
         </section>
         <ImageGallery />
-        <section id="testimonials">
+        <section id="mobile-testimonials">
           <MTestimonials />
         </section>
-        <section id="contact">
+        <section id="mobile-contact">
           <MContactFooter />
         </section>
       </div>
