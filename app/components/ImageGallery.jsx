@@ -1,77 +1,44 @@
-// components/ImageGallery.js
-export default function ImageGallery() {
+import React from "react";
+
+const ImageGallery = () => {
+  const facilities = [
+    {
+      title: "New Year",
+      image: "/assets/images/prev/New Year.jpg",
+      alt: "New Year",
+    },
+    {
+      title: "School Festival",
+      image: "/assets/images/prev/School Festival.jpg",
+      alt: "School Festival",
+    },
+    {
+      title: "Study Tour",
+      image: "/assets/images/prev/Study Tour.jpeg",
+      alt: "Study Tour",
+    },
+  ];
+
   return (
-    <div className="lg:px-36 mx-auto px-4 py-8">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {/* New Year */}
-        <div className="text-center">
-          <div className="border border-gray-300 aspect-square flex items-center justify-center mb-4">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-8 w-8 text-gray-300"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={1}
-                d="M12 4v16m8-8H4"
+    <div className="lg:px-36 px-4 mx-auto py-8 flex flex-col items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[74px] mb-8 ">
+        {facilities.map((facility, index) => (
+          <div key={index} className="flex flex-col mb-4">
+            <div className="relative  aspect-[4/3]">
+              <img
+                src={facility.image}
+                alt={facility.alt}
+                className="w-full h-full lg:h-[310px] lg:w-[303px] object-cover hover:scale-105 transition-transform duration-300"
               />
-            </svg>
+            </div>
+            <h3 className="mt-4 text-xl text-[#00000080] font-bold lg:text-[22px] text-start">
+              {facility.title}
+            </h3>
           </div>
-          <p className=" text-start text-[22px] leading-[30px] max-w-[200px] font-bold text-[#00000080]">
-            New Year
-          </p>
-        </div>
-
-        {/* School Festival */}
-        <div className="text-center">
-          <div className="border border-gray-300 aspect-square flex items-center justify-center mb-4">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-8 w-8 text-gray-300"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={1}
-                d="M12 4v16m8-8H4"
-              />
-            </svg>
-          </div>
-          <p className=" text-start text-[22px] leading-[30px] max-w-[200px] font-bold text-[#00000080]">
-            School Festival
-          </p>
-        </div>
-
-        {/* Study Tour */}
-        <div className="text-center">
-          <div className="border border-gray-300 aspect-square flex items-center justify-center mb-4">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-8 w-8 text-gray-300"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={1}
-                d="M12 4v16m8-8H4"
-              />
-            </svg>
-          </div>
-          <p className=" text-start text-[22px] leading-[30px] max-w-[200px] font-bold text-[#00000080]">
-            Study Tour
-          </p>
-        </div>
+        ))}
       </div>
     </div>
   );
-}
+};
+
+export default ImageGallery;
