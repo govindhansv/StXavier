@@ -4,12 +4,12 @@ const ExtraCurricularActivities = () => {
   const activities = [
     {
       title: "Sports & Games",
-      image: "/assets/home/library.png",
+      image: "/assets/images/Extra curricular/Sports.png",
       alt: "Students playing badminton",
     },
     {
       title: "Athletics",
-      image: "/assets/home/library.png",
+      image: "/assets/images/Extra curricular/Athletics.JPG",
       alt: "Athletic training session",
     },
     {
@@ -18,48 +18,48 @@ const ExtraCurricularActivities = () => {
       alt: "Student practicing archery",
     },
     {
-      title: "Sports & Games",
-      image: "/assets/home/library.png",
+      title: "Swimming",
+      image: "/assets/images/Extra curricular/220-SM997039.png",
       alt: "Students playing badminton",
     },
     {
-      title: "Athletics",
-      image: "/assets/home/library.png",
+      title: "Horse Riding",
+      image: "/assets/images/Extra curricular/1-SM220210.png",
       alt: "Athletic training session",
     },
     {
-      title: "Archery",
-      image: "/assets/home/library.png",
+      title: "Yoga",
+      image: "/assets/images/Extra curricular/19-SM942212.png",
       alt: "Student practicing archery",
     },
     {
-      title: "Sports & Games",
-      image: "/assets/home/library.png",
+      title: "Debates",
+      image: "/assets/images/Extra curricular/1-SM980789.png",
       alt: "Students playing badminton",
     },
     {
-      title: "Athletics",
-      image: "/assets/home/library.png",
+      title: "Expedition",
+      image: "/assets/images/Extra curricular/5-SM336401.png",
       alt: "Athletic training session",
     },
     {
-      title: "Archery",
-      image: "/assets/home/library.png",
+      title: "Choir & Band",
+      image: "/assets/images/Extra curricular/20-SM278850.png",
       alt: "Student practicing archery",
     },
     {
-      title: "Sports & Games",
-      image: "/assets/home/library.png",
+      title: "Music",
+      image: "/assets/images/Extra curricular/120-SM713648.png",
       alt: "Students playing badminton",
     },
     {
-      title: "Athletics",
-      image: "/assets/home/library.png",
+      title: "Dance and Drama",
+      image: "/assets/images/Extra curricular/120-SM938188.png",
       alt: "Athletic training session",
     },
     {
-      title: "Archery",
-      image: "/assets/home/library.png",
+      title: "Drawing & Painting",
+      image: "/assets/images/Extra curricular/20-SM92061.png",
       alt: "Student practicing archery",
     },
   ];

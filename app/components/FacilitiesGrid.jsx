@@ -4,7 +4,7 @@ const FacilitiesGrid = () => {
   const facilities = [
     {
       title: "Class Room",
-      // image: "/assets/home/library.png",
+      image: "/assets/images/Facility/Classroom.JPG",
       alt: "Students in classroom",
     },
     {
@@ -14,12 +14,12 @@ const FacilitiesGrid = () => {
     },
     {
       title: "Laboratories",
-      // image: "/assets/home/library.png",
+      image: "/assets/images/Facility/Laboratory.JPG",
       alt: "Students in laboratory",
     },
     {
       title: "Computer Lab",
-      // image: "/assets/home/library.png",
+      image: "/assets/images/Facility/Computer Lab.JPG",
       alt: "Students using computers",
     },
     {
@@ -29,7 +29,7 @@ const FacilitiesGrid = () => {
     },
     {
       title: "Art & Crafts",
-      // image: "/assets/home/library.png",
+      image: "/assets/images/Facility/Art and Craft.jpeg",
       alt: "Student doing art project",
     },
     {
@@ -50,7 +50,7 @@ const FacilitiesGrid = () => {
   ];
 
   return (
-    <div className="lg:px-36 mx-auto py-8 flex flex-col items-center">
+    <div className="lg:px-36 px-4 mx-auto py-8 flex flex-col items-center">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[74px] mb-8 ">
         {facilities.map((facility, index) => (
           <div key={index} className="flex flex-col mb-4">

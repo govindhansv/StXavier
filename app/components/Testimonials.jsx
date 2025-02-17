@@ -32,7 +32,7 @@ export default function Testimonials() {
           {/* Profile Section */}
           <div className="flex items-center mt-8 mb-4">
             <img
-              src="/assets/home/director.png"
+              src="/assets/images/Testimonial/josephine.jpg"
               alt="Dr. Josephine Samson"
               className="w-[162px] h-[162px]  mr-4 border-2 border-pink-[#FF0076] rounded-full"
             />
@@ -40,17 +40,18 @@ export default function Testimonials() {
               <h2 className="text-[20px] font-bold text-gray-800">
                 Dr. Josephine Samson,
               </h2>
-              <p className="text-[24px] font-medium text-gray-800">
+              <p className="text-[20px] font-medium text-gray-800 leading-7">
                 M.D. Community Medicine
               </p>
-              <p className="text-[24px] font-medium text-gray-800">
-                Krishna Institute of Medical Sciences ,<br /> Karad
+              <p className="text-[20px] font-medium text-gray-800  leading-7 ">
+                Krishna Institute of Medical Sciences ,
               </p>
+              <p className="text-[20px] font-medium text-gray-800  leading-7">Karad</p>
             </div>
           </div>
 
           {/* Testimonial Text */}
-          <blockquote className="  text-base lg:text-[20px] leading-snug font-light  mb-4">
+          <blockquote className="  text-base lg:text-[20px] leading-snug font-light pt-4  mb-4 ">
             In 2004, I entered my residential school as a quiet, unsure student,
             overwhelmed by the transition. Initially, I struggled academically
             and hesitated in sports and extracurriculars, but the constant

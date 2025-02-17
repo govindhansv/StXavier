@@ -49,7 +49,7 @@ export default function EumindDetails() {
         {/* Right Section with Divider */}
         <div className="flex items-center gap-8 ">
           {/* Divider */}
-          <div className="h-[180px] border-gray-600 border-r-[1px]  mr-4"></div>
+          <div className="h-[180px] border-gray-600 border-r-[1px] hidden md:block  mr-4"></div>
 
           {/* Content */}
           <div className="flex flex-col">

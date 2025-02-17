@@ -70,7 +70,7 @@ export default function Home() {
         <ExtraCurricularActivities />
         <Eumind />
         <EumindDetails />
-        <MTeachersSection />
+        {/* <MTeachersSection /> */}
         <NewsAndEvents />
         <UpcomingEvents />
         <PreviousEvents />

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
-import { Star } from "lucide-react";
+import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 
 export default function MTestimonials() {
   return (
@@ -22,14 +22,16 @@ export default function MTestimonials() {
               ))}
             </div>
             <div className="hidden lg:block absolute right-0 -top-4">
-              <span className="quote text-[#FF0076] text-[160px] font-serif">"</span>
+              <span className="quote text-[#FF0076] text-[160px] font-serif">
+                "
+              </span>
             </div>
           </div>
 
           {/* Profile Section - Responsive layout */}
           <div className="flex flex-col lg:flex-row items-center mt-8 mb-4">
             <img
-              src="/assets/home/director.png"
+              src="/assets/images/Testimonial/josephine.jpg"
               alt="Dr. Josephine Samson"
               className="w-24 h-24 lg:w-[162px] lg:h-[162px] mb-4 lg:mb-0 lg:mr-4 border-2 border-[#FF0076] rounded-full"
             />
@@ -48,7 +50,7 @@ export default function MTestimonials() {
           </div>
 
           {/* Testimonial Text - Responsive font size */}
-          <blockquote className="text-sm lg:text-[20px] leading-relaxed lg:leading-snug font-light mb-4">
+          <blockquote className="text-sm lg:text-[20px] leading-relaxed lg:leading-snug font-light mb-4 px-4">
             In 2004, I entered my residential school as a quiet, unsure student,
             overwhelmed by the transition. Initially, I struggled academically
             and hesitated in sports and extracurriculars, but the constant
@@ -62,11 +64,15 @@ export default function MTestimonials() {
           </blockquote>
 
           {/* Navigation Arrows - Responsive positioning */}
-          <div className="absolute inset-y-0 left-0 lg:left-10 flex items-center">
-            <button className="bg-gray-200/50 p-1 lg:p-2 text-xl lg:text-3xl">←</button>
+          <div className="absolute inset-y-0 -left-8 lg:left-10 flex items-center">
+            <button className="p-2 text-3xl">
+              <ChevronLeft size={48} strokeWidth={1} />
+            </button>
           </div>
-          <div className="absolute inset-y-0 right-0 lg:right-10 flex items-center">
-            <button className="bg-gray-200/50 p-1 lg:p-2 text-xl lg:text-3xl">→</button>
+          <div className="absolute inset-y-0 -right-6 lg:right-10 flex items-center">
+            <button className="p-2 text-3xl">
+              <ChevronRight size={48} strokeWidth={1} />
+            </button>
           </div>
         </div>
       </div>

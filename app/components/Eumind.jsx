@@ -13,7 +13,7 @@ const Eumind = () => {
       {/* Image Section */}
       <div className="relative w-full aspect-video">
         <img
-          src="/assets/home/homebanner.png"
+          src="/assets/images/Belgium/1.jpeg"
           alt="Students collaborating outdoors with laptop"
           className="w-full h-full lg:h-[733px] lg:w-[1100px] object-cover"
         />

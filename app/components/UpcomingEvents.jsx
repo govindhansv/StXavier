@@ -23,7 +23,7 @@ const UpcomingEvents = () => {
       style={{ background: "#F0F0F0 0% 0% no-repeat padding-box" }}
       className="pb-2"
     >
-      <div className="lg:mx-36 mx-auto border bg-white mb-16 px-16 py-12">
+      <div className="lg:mx-36 border bg-white mb-16 px-16 mx-6 py-12">
         <div className="flex justify-between items-start mb-4">
           <h2 className="font-bold text-[#00000080] lg:text-[20px] text-lg mb-8">
             UPCOMING EVENTS
