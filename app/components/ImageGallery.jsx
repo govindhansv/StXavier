@@ -4,7 +4,7 @@ const ImageGallery = () => {
   const facilities = [
     {
       title: "New Year",
-      image: "/assets/images/prev/New Year.jpg",
+      image: "/assets/images/prev/New year.jpg",
       alt: "New Year",
     },
     {

@@ -10,7 +10,7 @@ const AdmissionForm = () => {
     name: "",
     email: "",
     subject: "ADMISSION ENQUIRY",
-    honeypot: "", // if any value received in this field, form submission will be ignored.
+    honeypot: "",
     $dob: "",
     $classToBeAdmitted: "",
     $guardianName: "",
@@ -19,8 +19,6 @@ const AdmissionForm = () => {
     $mode: "",
     $gender: "",
     $attachment: "",
-    replyTo: "@", // this will set replyTo of email to email address entered in the form
-    accessKey: "006037a4-a0f9-4bb7-9e2f-d433aef27004", // get your access key from https://www.staticforms.xyz
   });
 
   const [response, setResponse] = useState({
@@ -33,31 +31,48 @@ const AdmissionForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     try {
-      const res = await fetch("https://api.staticforms.xyz/submit", {
+      const res = await fetch("/api/send", {
         method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify(contact),
-        headers: { "Content-Type": "application/json" },
       });
 
-      const json = await res.json();
+      const data = await res.json();
 
-      if (json.success) {
+      if (data.success) {
         setResponse({
           type: "success",
-          message: "Thank you for reaching out to us.",
+          message: "Thank you for your submission!",
+        });
+        setContact({
+          name: "",
+          email: "",
+          subject: "ADMISSION ENQUIRY",
+          honeypot: "",
+          $dob: "",
+          $classToBeAdmitted: "",
+          $guardianName: "",
+          $address: "",
+          $mobile: "",
+          $mode: "",
+          $gender: "",
+          $attachment: "",
         });
       } else {
         setResponse({
           type: "error",
-          message: json.message,
+          message: "There was an error sending your message. Please try again.",
         });
       }
-    } catch (e) {
-      console.log("An error occurred", e);
+    } catch (error) {
+      console.error("Error submitting form:", error);
       setResponse({
         type: "error",
-        message: "An error occured while submitting the form",
+        message: "An error occurred while submitting the form.",
       });
     }
   };
@@ -67,7 +82,7 @@ const AdmissionForm = () => {
       <div className="min-h-screen bg-white">
         <div className="mx-auto">
           {/* Header */}
-          <div className="sticky top-0 z-10 bg-white  lg:py-6">
+          <div className="sticky top-0 z-10 bg-white lg:py-6">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-28">
               <div className="flex flex-col sm:flex-row sm:items-center py-4 sm:h-16 gap-4 sm:gap-0">
                 <Link href="/admissions">
@@ -85,10 +100,7 @@ const AdmissionForm = () => {
           </div>
 
           <form
-            action="https://api.staticforms.xyz/submit"
-            method="post"
             onSubmit={handleSubmit}
-            encType="multipart/form-data"
             className="bg-gray-100 space-y-6 p-4 sm:p-8 lg:px-36"
           >
             <div className="flex flex-col sm:flex-row sm:items-center gap-2">
@@ -96,6 +108,7 @@ const AdmissionForm = () => {
               <input
                 type="text"
                 name="name"
+                value={contact.name}
                 onChange={handleChange}
                 className="w-full sm:flex-1 p-2 border rounded bg-white"
                 required
@@ -111,7 +124,6 @@ const AdmissionForm = () => {
                   style={{ display: "none" }}
                   onChange={handleChange}
                 />
-                <input type="hidden" name="subject" onChange={handleChange} />
               </div>
             </div>
 
@@ -121,6 +133,7 @@ const AdmissionForm = () => {
                 <input
                   type="date"
                   name="$dob"
+                  value={contact.$dob}
                   onChange={handleChange}
                   className="w-full sm:w-48 p-2 border rounded bg-white"
                   required
@@ -134,6 +147,7 @@ const AdmissionForm = () => {
                 <input
                   type="text"
                   name="$classToBeAdmitted"
+                  value={contact.$classToBeAdmitted}
                   onChange={handleChange}
                   className="w-full sm:w-48 p-2 border rounded bg-white"
                   required
@@ -244,14 +258,6 @@ const AdmissionForm = () => {
               />
             </div>
 
-            <input
-              type="hidden"
-              name="accessKey"
-              value={"006037a4-a0f9-4bb7-9e2f-d433aef27004"}
-            />
-
-            <input type="hidden" name="redirectTo" value={"cricbuzz.com"} />
-
             <div className="flex justify-center mt-8">
               <button
                 type="submit"
@@ -260,11 +266,12 @@ const AdmissionForm = () => {
                 Submit
               </button>
             </div>
+
             {response.message && (
               <div
                 className={`mt-4 p-4 rounded ${
                   response.type === "success"
-                    ? "bg-blue-800 text-white"
+                    ? "bg-green-100 text-green-800"
                     : "bg-red-100 text-red-800"
                 }`}
               >
