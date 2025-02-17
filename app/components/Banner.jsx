@@ -49,7 +49,9 @@ function Banner() {
                 alt={`Banner ${index + 1}`}
                 fill
                 priority={index === 0}
-                className=" object-cover  object-center"
+                className={`object-cover   ${
+                  index === 0 ? `object-top` : `object-center`
+                }`}
                 sizes="100vw"
                 quality={90}
               />
