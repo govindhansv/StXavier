@@ -16,11 +16,11 @@ const DirectorsMessage = () => {
 
         <div className="flex flex-col lg:flex-row gap-8 items-center lg:items-start relative mt-16">
           {/* Image */}
-          <div className="w-full lg:w-[220px] pr-16 flex justify-center lg:justify-start">
+          <div className="w-full lg:w-[220px] flex justify-center lg:justify-start overflow-hidden">
             <img
               src="/assets/homeimg/director.jpg"
               alt="Fr. Tomy Kariyilakulam"
-              className="h-36 lg:h-48 w-48 object-cover"
+              className="h-36 lg:h-64 w-64 object-cover object-top mr-16 scale-150"
             />
           </div>
 

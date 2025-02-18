@@ -4,7 +4,7 @@ import React from "react";
 const StatsDashboard = () => {
   return (
     <div
-      className="p-4 md:p-8  md:px-40 mt-8 md:mt-24 pb-8 md:pb-16"
+      className="md:px-40 mt-8 md:mt-16 "
       style={{ background: "#F0F0F0 0% 0% no-repeat padding-box" }}
     >
       <Image
