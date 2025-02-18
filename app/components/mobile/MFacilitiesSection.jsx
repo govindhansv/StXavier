@@ -13,7 +13,7 @@ const MFacilitiesSection = () => {
       {/* Image Section - Adjusted for better mobile display */}
       <div className="relative w-full aspect-video overflow-hidden">
         <img
-          src="/assets/home/homebanner.png"
+          src="/assets/images/Hero image/0.JPG"
           alt="Students collaborating outdoors with laptop"
           className="w-full h-full object-cover lg:w-[1100px] lg:h-[619px]"
         />

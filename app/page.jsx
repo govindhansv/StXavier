@@ -84,7 +84,7 @@ export default function Home() {
           <MHeroSection />
         </section>
         <section id="mobile-stats">
-          <MStatsDashboard />
+          <StatsDashboard />
         </section>
         <section id="mobile-who-we-are">
           <MWhoWeAreSection />

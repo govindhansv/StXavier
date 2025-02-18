@@ -12,7 +12,7 @@ const PreviousEvents = () => {
       {/* Image Section */}
       <div className="relative w-full aspect-video  overflow-hidden">
         <img 
-          src="/assets/home/homebanner.png"
+          src="/assets/images/Hero image/0.JPG"
           alt="Students collaborating outdoors with laptop"
           className="w-full h-full object-cover"
         />

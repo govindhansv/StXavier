@@ -63,14 +63,30 @@ const ContactFooter = () => {
             {/* Social Icons */}
             <div className="flex justify-center md:justify-start space-x-5">
               {[
-                { Icon: FaFacebook, label: "Facebook" },
-                { Icon: FaInstagram, label: "Instagram" },
-                { Icon: FaWhatsapp, label: "WhatsApp" },
-                { Icon: FaMapMarkerAlt, label: "Location" },
-              ].map(({ Icon, label }) => (
+                {
+                  Icon: FaFacebook,
+                  label: "Facebook",
+                  url: "https://www.facebook.com/stxavierspanchgani",
+                },
+                {
+                  Icon: FaInstagram,
+                  label: "Instagram",
+                  url: "https://www.instagram.com/stxavierspanchgani/",
+                },
+                {
+                  Icon: FaWhatsapp,
+                  label: "WhatsApp",
+                  url: "https://wa.me/+919975064585",
+                },
+                {
+                  Icon: FaMapMarkerAlt,
+                  label: "Location",
+                  url: "https://maps.app.goo.gl/M3W1JCqH8XxDUp6y8",
+                },
+              ].map(({ Icon, label, url }) => (
                 <a
                   key={label}
-                  href="#"
+                  href={url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-600 hover:text-[#FF0076] transition-all transform hover:scale-110"
