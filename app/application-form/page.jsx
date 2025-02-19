@@ -492,13 +492,13 @@ export default function ApplicationForm() {
             </div>
 
             {/* File Upload Section */}
-            <div className="grid grid-cols-1 sm:grid-cols-[200px,1fr] items-start gap-4 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-[200px,1fr] items-start gap-4 mb-8 lg:w-3/4">
               <label className="text-gray-600">Attachments</label>
               <div className="bg-white p-4 sm:p-6 space-y-6">
                 {/* Applicant's Photo Upload */}
                 <div className="bg-white border-b border-gray-200 pb-6">
                   <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-                    <div className="space-y-1 w-full sm:w-auto sm:mr-24">
+                    <div className="space-y-1 w-full sm:w-auto sm:mr-24 flex-grow">
                       <h3 className="text-[20px] text-gray-600 font-medium">
                         APPLICANT'S PHOTO
                       </h3>
@@ -506,7 +506,7 @@ export default function ApplicationForm() {
                         {fileNames.photo || "No file chosen"}
                       </p>
                     </div>
-                    <div className="flex items-center gap-3 w-full sm:w-auto">
+                    <div className="flex items-center justify-end w-full sm:w-auto">
                       <input
                         type="file"
                         id="photo"
@@ -521,7 +521,7 @@ export default function ApplicationForm() {
                         UPLOAD
                       </label>
                       {files.photo && (
-                        <div className="w-8 h-8 bg-[#8BC34A] flex items-center justify-center">
+                        <div className="ml-8 w-8 h-8 bg-[#8BC34A] flex items-center justify-center">
                           <svg
                             className="w-5 h-5 text-white"
                             fill="none"
@@ -544,7 +544,7 @@ export default function ApplicationForm() {
                 {/* Caste Certificate Upload */}
                 <div className="border-b border-gray-200 pb-6">
                   <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-                    <div className="space-y-1 w-full sm:w-auto sm:mr-24">
+                    <div className="space-y-1 w-full sm:w-auto sm:mr-24 flex-grow">
                       <h3 className="text-[20px] text-gray-600 font-medium">
                         CASTE CERTIFICATE
                       </h3>
@@ -552,7 +552,7 @@ export default function ApplicationForm() {
                         {fileNames.casteCertificate || "No file chosen"}
                       </p>
                     </div>
-                    <div className="flex items-center gap-3 w-full sm:w-auto">
+                    <div className="flex items-center justify-end w-full sm:w-auto">
                       <input
                         type="file"
                         id="casteCertificate"
@@ -569,7 +569,7 @@ export default function ApplicationForm() {
                         UPLOAD
                       </label>
                       {files.casteCertificate && (
-                        <div className="w-8 h-8 bg-[#8BC34A] flex items-center justify-center">
+                        <div className="ml-8 w-8 h-8 bg-[#8BC34A] flex items-center justify-center">
                           <svg
                             className="w-5 h-5 text-white"
                             fill="none"
@@ -592,7 +592,7 @@ export default function ApplicationForm() {
                 {/* Transfer Certificate Upload */}
                 <div className="border-b border-gray-200 pb-6">
                   <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-                    <div className="space-y-1 w-full sm:w-auto sm:mr-24">
+                    <div className="space-y-1 w-full sm:w-auto sm:mr-24 flex-grow">
                       <h3 className="text-[20px] text-gray-600 font-medium">
                         TRANSFER CERTIFICATE
                       </h3>
@@ -600,7 +600,7 @@ export default function ApplicationForm() {
                         {fileNames.transferCertificate || "No file chosen"}
                       </p>
                     </div>
-                    <div className="flex items-center gap-3 w-full sm:w-auto">
+                    <div className="flex items-center justify-end w-full sm:w-auto">
                       <input
                         type="file"
                         id="transferCertificate"
@@ -617,7 +617,7 @@ export default function ApplicationForm() {
                         UPLOAD
                       </label>
                       {files.transferCertificate && (
-                        <div className="w-8 h-8 bg-[#8BC34A] flex items-center justify-center">
+                        <div className="ml-8 w-8 h-8 bg-[#8BC34A] flex items-center justify-center">
                           <svg
                             className="w-5 h-5 text-white"
                             fill="none"

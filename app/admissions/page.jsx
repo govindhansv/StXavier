@@ -80,7 +80,30 @@ export default function AdmissionPage() {
             ONLINE ADMISSION FORM
           </Link>
         </div>
-
+        <div className="px-4 sm:px-6 lg:px-36 py-8 lg:py-12 bg-gray-100 space-y-6 lg:space-y-8">
+          <div>
+            <h2 className="text-xl lg:text-2xl font-bold mb-3 lg:mb-4">
+              GENERAL RULES
+            </h2>
+            <p className="text-base lg:text-[20px] leading-relaxed lg:leading-snug font-light ">
+              All students have to abide by all the rules and regulations of the
+              school failing in which they will be dismissed without notice.
+            </p>
+            <p className="text-base lg:text-[20px] leading-relaxed lg:leading-snug font-light pt-2">
+              No student will be allowed to be absent without permission
+            </p>
+            <p className="text-base lg:text-[20px] leading-relaxed lg:leading-snug font-light pt-2">
+              Students are not allowed to bring any valuables like money,
+              jewellery or electronic items to school{" "}
+            </p>
+            <p className="text-base lg:text-[20px] leading-relaxed lg:leading-snug font-light pt-2">
+              Students are not allowed to bring anything for boarders from
+              outside. Any student found helping boarders to bring in anything
+              will be dismissed summarily.{" "}
+            </p>
+          </div>
+        </div>
+        {/* 
         <div className="px-4 sm:px-6 lg:px-36 py-6 lg:py-12 bg-gray-100">
           <h2 className="text-xl lg:text-2xl font-bold mb-4 lg:mb-6">
             GENERAL RULES
@@ -108,7 +131,7 @@ export default function AdmissionPage() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <ContactFooter />
     </>

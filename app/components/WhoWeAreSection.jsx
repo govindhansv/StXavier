@@ -2,7 +2,7 @@ import React from "react";
 
 const WhoWeAreSection = () => {
   return (
-    <div className="lg:px-36 mx-auto p-8">
+    <div className="lg:px-36 mx-auto">
       <div className="mb-8">
         <button className="bg-[#FF0076] text-white px-6 py-5 text-sm hover:bg-[#FF0076]/90 font-bold lg:text-[26px]">
           WHO WE ARE

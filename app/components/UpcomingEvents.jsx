@@ -2,8 +2,8 @@
 import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
 import React from "react";
 
-const Event = ({ month, date, title }) => (
-  <div className="flex flex-col items-center relative">
+const Event = ({ month, date, title, className }) => (
+  <div className={`${className} flex flex-col items-center relative `}>
     <div className="text-[#00000080] uppercase text-sm lg:text-[28px] font-bold  mb-4">
       {month}
     </div>
@@ -30,17 +30,27 @@ const UpcomingEvents = () => {
           </h2>
           <div className="flex gap-2">
             <button className="text-[#FF1493] hover:opacity-80 font-bold">
-              <div className="w-0 h-0 border-t-[16px] border-t-transparent border-b-[16px] border-b-transparent border-r-[16px] border-r-[#FF0076] mb-4"></div>
+              <div className="w-0 h-0 border-t-[12px] border-t-transparent border-b-[12px] border-b-transparent border-r-[12px] border-r-[#00000080] mb-4"></div>
             </button>
             <button className="text-[#FF1493] hover:opacity-80">
-              <div className="w-0 h-0 border-t-[16px] border-t-transparent border-b-[16px] border-b-transparent border-l-[16px] border-l-[#FF0076] mb-4"></div>
+              <div className="w-0 h-0 border-t-[12px] border-t-transparent border-b-[12px] border-b-transparent border-l-[12px] border-l-[#00000080] mb-4"></div>
             </button>
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-          <Event month="JUN" date="02" title="ACADEMIC YEAR STARTS" />
-          <Event month="OCT" date="18" title="ANNUAL ATHLETIC MEET" />
+          <Event
+            month="JUN"
+            date="02"
+            title="ACADEMIC YEAR STARTS"
+            className={"lg:border-r-2 border-b-2 lg:border-b-0 pb-8 lg:pb-0"}
+          />
+          <Event
+            month="OCT"
+            date="18"
+            title="ANNUAL ATHLETIC MEET"
+            className="lg:border-r-2 lg:border-b-0  pb-8 lg:pb-0"
+          />
           <Event
             month="DEC"
             date="21"

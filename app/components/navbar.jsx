@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from 'next/navigation';
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,8 +22,8 @@ const Navbar = () => {
   ];
 
   const scrollToSection = (id) => {
-    if (id === 'downloads') {
-      router.push('/downloads');
+    if (id === "downloads") {
+      router.push("/downloads");
     } else {
       const element = document.getElementById(id);
       if (element) {
@@ -35,20 +35,22 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white fixed top-0 w-full z-50">
-      <div className="mx-auto px-4 sm:px-6 lg:px-24 flex flex-col justify-center pr-8">
+      <div className="mx-auto px-4 sm:px-6 lg:px-36 flex flex-col justify-center">
         {/* Main navbar content */}
         <div className="flex justify-between items-center h-20 md:h-32">
           {/* Logo and School Name */}
-          <div className="flex items-center space-x-2 md:space-4 flex-1 md:w-2/5">
-            <div className="w-12 h-12 md:w-full md:h-auto relative flex-shrink-0 pr-12">
-              <Image
-                src="/assets/logo/logo.png"
-                alt="St. Xavier's Logo"
-                className="object-contain h-28"
-                width={500}
-                height={500}
-              />
-            </div>
+          <div className="md:w-2/5">
+            <a href="/">
+              <div className="w-12 h-12 md:w-full md:h-auto relative flex-shrink-0 pr-12">
+                <Image
+                  src="/assets/logo/logo.png"
+                  alt="St. Xavier's Logo"
+                  className="object-contain h-28"
+                  width={500}
+                  height={500}
+                />
+              </div>
+            </a>
           </div>
           <div className="w-16"></div>
 
@@ -60,7 +62,7 @@ const Navbar = () => {
                 <React.Fragment key={item.label}>
                   <button
                     onClick={() => scrollToSection(item.href.slice(1))}
-                    className={`text-gray-500 hover:text-gray-900 text-[20px] font-medium ${
+                    className={`text-gray-500 hover:text-gray-900 text-[16px] font-medium ${
                       index == 0 ? `pr-3` : `pl-3`
                     } ${index == 3 ? `pl-3` : `pr-3`} `}
                   >
@@ -79,7 +81,7 @@ const Navbar = () => {
                 <React.Fragment key={item.label}>
                   <button
                     onClick={() => scrollToSection(item.href.slice(1))}
-                    className={`text-gray-500 hover:text-gray-900 text-[20px] font-medium ${
+                    className={`text-gray-500 hover:text-gray-900 text-[16px] font-medium ${
                       index == 0 ? `pr-3` : `pl-3`
                     } ${index == 2 ? `pl-3` : `pr-3`} `}
                   >

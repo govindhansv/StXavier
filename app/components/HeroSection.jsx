@@ -1,8 +1,6 @@
 "use client";
-
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useCallback } from "react";
-import useEmblaCarousel from "embla-carousel-react";
 
 const heroImages = [
   "/assets/images/carousel/asian-doctor-female-isolated-white-background.jpg",
@@ -11,29 +9,54 @@ const heroImages = [
   "/assets/images/carousel/man-office-clothes-playing-basketball-white-space-unusual-look-businessman-motion-action-sport-healthy-lifestyle.jpg",
 ];
 
-const HeroSection = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+// Choose one of these animation styles by changing the className in the image container
+const animationStyles = {
+  // 1. Fade transition
+  fade: `
+    opacity-0 transition-opacity duration-500 ease-in-out
+    [&.active]:opacity-100
+  `,
+  
+  // 2. Zoom fade
+  zoomFade: `
+    opacity-0 scale-95 transition-all duration-500 ease-in-out
+    [&.active]:opacity-100 [&.active]:scale-100
+  `,
+  
+  // 3. Flip effect
+  flip: `
+    opacity-0 rotateY-90 transition-all duration-500 ease-in-out
+    [&.active]:opacity-100 [&.active]:rotate-0
+  `,
+  
+  // 4. Slide and fade
+  slideFade: `
+    opacity-0 translate-y-4 transition-all duration-500 ease-in-out
+    [&.active]:opacity-100 [&.active]:translate-y-0
+  `
+};
 
-  const autoplay = useCallback(() => {
-    if (emblaApi) {
-      emblaApi.scrollNext();
-    }
-  }, [emblaApi]);
+const HeroSection = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextSlide = useCallback(() => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex === heroImages.length - 1 ? 0 : prevIndex + 1
+    );
+  }, []);
 
   useEffect(() => {
-    const interval = setInterval(autoplay, 3000); // Changes slide every 3 seconds
+    const interval = setInterval(nextSlide, 3000);
     return () => clearInterval(interval);
-  }, [autoplay]);
+  }, [nextSlide]);
 
   return (
     <div className="px-4 sm:px-6 lg:px-36 relative bg-white">
-      {/* Pink About Us Button */}
       <div className="absolute top-0 left-4 sm:left-6 lg:left-36">
         <button className="bg-[#FF0076] text-white px-6 py-5 text-sm hover:bg-[#FF0076]/90 font-bold lg:text-[26px]">
           About Us
         </button>
       </div>
-
       <div className="mx-auto">
         <div className="flex flex-col lg:flex-row items-center">
           {/* Left Content */}
@@ -47,7 +70,7 @@ const HeroSection = () => {
               <br className="hidden sm:block" />
               (RESIDENTIAL)
             </h2>
-            <p className="leading-[30px] md:text-[24px] text-black font-light lg:max-w-[675px]">
+            <p className="leading-[30px] md:text-[24px] text-black font-light lg:max-w-[800px]">
               St. Xavier's High School, Panchgani, is a residential educational
               institution of St. Xavier's Education Trust. Panchgani, an
               evergreen hill station, is a well-known education centre. Located
@@ -57,21 +80,24 @@ const HeroSection = () => {
               moral upbringing.
             </p>
           </div>
-
           {/* Right Image Carousel */}
-          <div className="relative h-[300px] sm:h-[400px] lg:h-[600px] mt-8 lg:mt-0 w-full lg:w-1/3">
-            <div ref={emblaRef} className="w-full h-full overflow-hidden">
-              <div className="flex h-full">
-                {heroImages.map((src, index) => (
-                  <div key={index} className="flex-[0_0_100%] min-w-0 relative">
-                    <img
-                      src={src}
-                      alt="Student on skateboard"
-                      className="object-contain w-full h-[600px]"
-                    />
-                  </div>
-                ))}
-              </div>
+          <div className="relative h-[300px] sm:h-[400px] lg:h-[600px] mt-8 lg:mt-0 bottom-0 w-full lg:w-1/3 overflow-hidden">
+            <div className="relative w-full h-full flex items-end bottom-0">
+              {heroImages.map((src, index) => (
+                <div
+                  key={index}
+                  // Choose one of the animation styles here
+                  className={`absolute w-full h-full ${animationStyles.fade} ${
+                    index === currentIndex ? 'active' : ''
+                  }`}
+                >
+                  <img
+                    src={src}
+                    alt={`Slide ${index + 1}`}
+                    className="object-contain object-bottom w-full h-[500px] absolute bottom-0"
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>
