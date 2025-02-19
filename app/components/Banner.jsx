@@ -39,7 +39,7 @@ function Banner() {
   }, [autoplay]);
 
   return (
-    <section className="relative w-full max-w-full h-[80vh] overflow-hidden">
+    <section className="relative w-full max-w-full h-[80vh] overflow-hidden lg:mt-32">
       <div className="overflow-hidden w-full h-full" ref={emblaRef}>
         <div className="flex h-full touch-pan-y">
           {bannerImages.map((src, index) => (

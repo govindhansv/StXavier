@@ -30,7 +30,7 @@ import MContactFooter from "./components/mobile/MContactFooter";
 export default function Home() {
   return (
     <>
-      <div className="relative bg-white pt-20 lg:pt-24 hidden lg:block ">
+      <div className="relative bg-white  hidden lg:block ">
         <Navbar />
         <Banner />
         <section id="about">

@@ -26,8 +26,11 @@ const Navbar = () => {
       router.push("/downloads");
     } else {
       const element = document.getElementById(id);
+      const navbarHeight = document.querySelector('nav').offsetHeight;
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
       }
       setIsMenuOpen(false);
     }
