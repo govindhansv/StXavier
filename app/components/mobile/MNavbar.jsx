@@ -26,36 +26,42 @@ const MNavbar = () => {
       router.push("/downloads");
     } else {
       const element = document.getElementById(id);
-      const navbarHeight = document.querySelector('nav').offsetHeight;
+      const navbarHeight = document.querySelector("nav").offsetHeight;
       if (element) {
         const elementPosition = element.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - navbarHeight - 80;
+        const offsetPosition =
+          elementPosition + window.pageYOffset - navbarHeight - 32;
         console.log(offsetPosition);
-        
-        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+
+        window.scrollTo({ top: offsetPosition, behavior: "smooth" });
       }
       setIsMenuOpen(false);
     }
   };
 
   return (
-    <nav id="mobile-navbar" className="bg-white fixed top-0 w-full z-50 h-20 md:h-40">
+    <nav
+      id="mobile-navbar"
+      className="bg-white fixed top-0 w-full z-50 h-20 md:h-40"
+    >
       <div className=" flex flex-col justify-center">
         {/* Main navbar content */}
         <div className="flex justify-between items-center h-20 md:h-40">
           {/* Logo and School Name */}
           <div className="flex items-center space-x-2 md:space-4 flex-1">
-            <div className=" md:w-full md:h-auto relative flex-shrink-0">
-              {/* Increased width and height for mobile */}
-              <Image
-                src="/assets/logo/logo.png"
-                alt="St. Xavier's Logo"
-                className="object-contain"
-                width={150} // Increased from 80 to 150 for mobile
-                height={150} // Increased from 80 to 150 for mobile
-                sizes="(max-width: 768px) 150px, 500px"
-              />
-            </div>
+            <a href="/">
+              <div className=" md:w-full md:h-auto relative flex-shrink-0 pl-2">
+                {/* Increased width and height for mobile */}
+                <Image
+                  src="/assets/logo/logo.png"
+                  alt="St. Xavier's Logo"
+                  className="object-contain"
+                  width={250} // Increased from 80 to 150 for mobile
+                  height={250} // Increased from 80 to 150 for mobile
+                  sizes="(max-width: 768px) 150px, 500px"
+                />
+              </div>
+            </a>
           </div>
           <div className="w-16"></div>
 
