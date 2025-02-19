@@ -5,7 +5,7 @@ import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 
 export default function Testimonials() {
   return (
-    <div className="px-6 lg:px-36 mx-auto py-12 bg-gray-50">
+    <div className="px-6 lg:px-36 mx-auto pb-12 bg-gray-50">
       {/* Section Title */}
       <div className="mb-8">
         <button className="bg-[#FF0076] text-white px-6 py-5 text-sm hover:bg-[#FF0076]/90 font-bold lg:text-[26px]">
