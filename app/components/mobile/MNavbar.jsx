@@ -26,15 +26,20 @@ const MNavbar = () => {
       router.push("/downloads");
     } else {
       const element = document.getElementById(id);
+      const navbarHeight = document.querySelector('nav').offsetHeight;
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - navbarHeight - 80;
+        console.log(offsetPosition);
+        
+        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
       }
       setIsMenuOpen(false);
     }
   };
 
   return (
-    <nav className="bg-white fixed top-0 w-full z-50 h-20 md:h-40">
+    <nav id="mobile-navbar" className="bg-white fixed top-0 w-full z-50 h-20 md:h-40">
       <div className=" flex flex-col justify-center">
         {/* Main navbar content */}
         <div className="flex justify-between items-center h-20 md:h-40">

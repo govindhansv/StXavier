@@ -12,7 +12,7 @@ export default function MTestimonials() {
         </button>
       </div>
 
-      <div className="shadow-xl p-4 lg:p-8 bg-white mt-8 lg:mt-16">
+      <div className="p-4 lg:p-8 bg-white mt-8 lg:mt-16">
         <div className="lg:px-36 mx-auto p-4 lg:p-6 bg-white relative">
           {/* Star Rating - Responsive positioning */}
           <div className="absolute top-4 lg:top-12 right-4 lg:right-12">

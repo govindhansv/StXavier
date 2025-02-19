@@ -10,7 +10,7 @@ const MContactFooter = () => {
   return (
     <footer className="relative text-gray-700 py-10 border-t px-4 md:px-6 lg:px-36">
       {/* Contact Us Button */}
-      <div className="absolute -top-7 left-4 md:left-6 lg:left-36">
+      <div className="absolute top-0 left-4 md:left-6 lg:left-36">
         <button className="bg-[#FF0076] text-white px-4 md:px-6 py-3 md:py-5 text-base md:text-sm lg:text-[26px] hover:bg-[#FF0076]/90 font-bold transition-colors">
           Contact Us
         </button>
@@ -37,13 +37,11 @@ const MContactFooter = () => {
             <div className="text-center md:text-left">
               <p className="text-base md:text-sm leading-relaxed text-gray-700 lg:text-[20px]">
                 St. Xavier's High School,{" "}
-                <span className="font-bold">Panchgani</span> P.O.,
-                <br className="hidden md:block" />{" "}
-                <span className="md:hidden">, </span>
+                <span className="font-bold">Panchgani</span> P.O, <br />
                 Tal - Mahabaleshwar, Dist - Satara,
                 <br className="hidden md:block" />{" "}
-                <span className="md:hidden">, </span>
-                Maharashtra, India - 412 805
+                Maharashtra, India <br />
+                412 805
               </p>
             </div>
 
