@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const DirectorsMessage = () => {
@@ -17,10 +18,12 @@ const DirectorsMessage = () => {
         <div className="flex flex-col lg:flex-row gap-8 items-center lg:items-start relative mt-16">
           {/* Image */}
           <div className="w-full lg:w-[220px] flex justify-center lg:justify-start overflow-hidden">
-            <img
+            <Image
               src="/assets/homeimg/director.jpg"
               alt="Fr. Tomy Kariyilakulam"
-              className="h-36 lg:h-64 w-64 object-cover object-top mr-16 scale-150"
+              className="h-36 lg:h-64 w-64 object-cover object-top scale-100"
+              width={640}
+              height={640}
             />
           </div>
 
