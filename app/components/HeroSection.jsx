@@ -16,31 +16,31 @@ const animationStyles = {
     opacity-0 transition-opacity duration-500 ease-in-out
     [&.active]:opacity-100
   `,
-  
+
   // 2. Zoom fade
   zoomFade: `
     opacity-0 scale-95 transition-all duration-500 ease-in-out
     [&.active]:opacity-100 [&.active]:scale-100
   `,
-  
+
   // 3. Flip effect
   flip: `
     opacity-0 rotateY-90 transition-all duration-500 ease-in-out
     [&.active]:opacity-100 [&.active]:rotate-0
   `,
-  
+
   // 4. Slide and fade
   slideFade: `
     opacity-0 translate-y-4 transition-all duration-500 ease-in-out
     [&.active]:opacity-100 [&.active]:translate-y-0
-  `
+  `,
 };
 
 const HeroSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = useCallback(() => {
-    setCurrentIndex((prevIndex) => 
+    setCurrentIndex((prevIndex) =>
       prevIndex === heroImages.length - 1 ? 0 : prevIndex + 1
     );
   }, []);
@@ -88,13 +88,15 @@ const HeroSection = () => {
                   key={index}
                   // Choose one of the animation styles here
                   className={`absolute w-full h-full ${animationStyles.fade} ${
-                    index === currentIndex ? 'active' : ''
+                    index === currentIndex ? "active" : ""
                   }`}
                 >
                   <img
                     src={src}
                     alt={`Slide ${index + 1}`}
-                    className="object-contain object-bottom w-full h-[500px] absolute bottom-0"
+                    className={`object-contain object-bottom w-full h-[500px] absolute bottom-0 ${
+                      index === 0 || index === 2 ? "h-[400px]" : ""
+                    }`}
                   />
                 </div>
               ))}
